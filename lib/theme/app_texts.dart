@@ -17,4 +17,9 @@ class AppTexts {
   static const String kork = "KORK Studio!";
   static const String korkMain =
       "Архитектурные проекты и концепции | Фасады | Дизайн интерьеров";
+  static const String all = "Все";
+  static const String conceps = "Концепции";
+  static const String exteryers = "Экстерьер";
+  static const String interyers = "Интерьер";
+  static const String animations = "Анимация";
 }

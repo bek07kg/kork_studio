@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:kork_studio/components/animations/animated_logo_white.dart';
 import 'package:kork_studio/components/appbar_widgets/custom_appBar.dart';
 import 'package:kork_studio/components/appbar_widgets/custom_drawer.dart';
+import 'package:kork_studio/components/custom_tabBar.dart';
 import 'package:kork_studio/components/custom_texts/end_text.dart';
 import 'package:kork_studio/routes/pages/detail_image_page.dart';
 import 'package:kork_studio/theme/app_colors.dart';
@@ -73,6 +74,10 @@ class _WorkPageState extends State<WorksPage> {
             slivers: [
               CustomAppBar(
                   screenWidth: screenWidth, screenHeight: screenHeight),
+              SliverToBoxAdapter(
+                child: SizedBox(height: screenWidth < 600 ? 25 : 40),
+              ),
+              CustomTabBar(),
               SliverPadding(
                 padding: screenWidth < 600
                     ? const EdgeInsets.symmetric(horizontal: 5, vertical: 30)
