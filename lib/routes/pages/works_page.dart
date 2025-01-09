@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:kork_studio/components/animations/animated_logo_white.dart';
 import 'package:kork_studio/components/appbar_widgets/custom_appBar.dart';
 import 'package:kork_studio/components/appbar_widgets/custom_drawer.dart';
-import 'package:kork_studio/components/custom_tabBar.dart';
+import 'package:kork_studio/components/tabbar_widgets/custom_tabBar.dart';
 import 'package:kork_studio/components/custom_texts/end_text.dart';
-import 'package:kork_studio/routes/pages/detail_image_page.dart';
-import 'package:kork_studio/theme/app_colors.dart';
+import 'package:kork_studio/components/works_screens/all_screens.dart';
+import 'package:kork_studio/components/works_screens/panorama360_screen.dart';
+import 'package:kork_studio/theme/app_texts.dart';
 
 class WorksPage extends StatefulWidget {
   const WorksPage({super.key});
@@ -17,6 +18,9 @@ class WorksPage extends StatefulWidget {
 class _WorkPageState extends State<WorksPage> {
   late ScrollController _scrollController;
   bool _isLogoVisible = false;
+
+  // Индекс активной вкладки
+  int _selectedTabIndex = 0;
 
   final List<String> imagePaths = [
     "assets/images/foto1.jpg",
@@ -37,19 +41,27 @@ class _WorkPageState extends State<WorksPage> {
     "assets/images/foto16.jpg",
   ];
 
+  final List<String> tabLabels = [
+    AppTexts.all,
+    AppTexts.conceps,
+    AppTexts.exteryers,
+    AppTexts.interyers,
+    AppTexts.animations,
+    AppTexts.panorama360,
+  ];
+
   @override
   void initState() {
     super.initState();
     _scrollController = ScrollController();
     _scrollController.addListener(() {
-      // Следим за состоянием прокрутки
       if (_scrollController.offset > 150 && !_isLogoVisible) {
         setState(() {
-          _isLogoVisible = true; // Логотип становится видимым
+          _isLogoVisible = true;
         });
       } else if (_scrollController.offset <= 150 && _isLogoVisible) {
         setState(() {
-          _isLogoVisible = false; // Логотип исчезает
+          _isLogoVisible = false;
         });
       }
     });
@@ -59,6 +71,39 @@ class _WorkPageState extends State<WorksPage> {
   void dispose() {
     _scrollController.dispose();
     super.dispose();
+  }
+
+  // Метод для отображения контента в зависимости от выбранной вкладки
+  Widget _getContentForSelectedTab() {
+    switch (_selectedTabIndex) {
+      case 0:
+        return AllScreens(
+            screenWidth: MediaQuery.of(context).size.width,
+            imagePaths: imagePaths); // Контент для первой вкладки
+      case 1:
+        return AllScreens(
+            screenWidth: MediaQuery.of(context).size.width,
+            imagePaths:
+                imagePaths); // Замените на свой виджет для второй вкладки
+      case 2:
+        return AllScreens(
+            screenWidth: MediaQuery.of(context).size.width,
+            imagePaths:
+                imagePaths); // Замените на свой виджет для третьей вкладки
+      case 3:
+        return AllScreens(
+            screenWidth: MediaQuery.of(context).size.width,
+            imagePaths:
+                imagePaths); // Замените на свой виджет для четвертой вкладки
+      case 4:
+        return AllScreens(
+            screenWidth: MediaQuery.of(context).size.width,
+            imagePaths: imagePaths);
+      case 5:
+        return Panorama360Screen(); // Замените на свой виджет для шестой вкладки
+      default:
+        return SizedBox(); // Пустой виджет по умолчанию
+    }
   }
 
   @override
@@ -77,63 +122,17 @@ class _WorkPageState extends State<WorksPage> {
               SliverToBoxAdapter(
                 child: SizedBox(height: screenWidth < 600 ? 25 : 40),
               ),
-              CustomTabBar(),
-              SliverPadding(
-                padding: screenWidth < 600
-                    ? const EdgeInsets.symmetric(horizontal: 5, vertical: 30)
-                    : const EdgeInsets.symmetric(horizontal: 40, vertical: 50),
-                sliver: SliverGrid(
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: screenWidth < 600 ? 1 : 2,
-                    crossAxisSpacing: 4,
-                    mainAxisSpacing: 4,
-                    childAspectRatio: 3 / 2,
-                  ),
-                  delegate: SliverChildBuilderDelegate(
-                    (context, index) {
-                      String imagePath = imagePaths[index];
-                      bool isHovered = false; // Флаг для отслеживания наведения
-
-                      return StatefulBuilder(
-                        builder: (context, setState) => MouseRegion(
-                          onEnter: (_) {
-                            setState(() => isHovered = true);
-                          },
-                          onExit: (_) {
-                            setState(() => isHovered = false);
-                          },
-                          child: GestureDetector(
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) =>
-                                      DetailImagePage(imagePath: imagePath),
-                                ),
-                              );
-                            },
-                            child: Stack(
-                              fit: StackFit.expand,
-                              children: [
-                                Image.asset(
-                                  imagePath,
-                                  fit: BoxFit.cover,
-                                ),
-                                if (isHovered)
-                                  Container(
-                                    color: AppColors.appBarIconColor
-                                        .withOpacity(0.9),
-                                  ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      );
-                    },
-                    childCount: imagePaths.length,
-                  ),
-                ),
+              CustomTabBar(
+                selectedIndex: _selectedTabIndex, // передаем выбранный индекс
+                tabLabels: tabLabels, // передаем список текстов
+                onTabChanged: (index) {
+                  setState(() {
+                    _selectedTabIndex = index;
+                  });
+                },
               ),
+              // Отображение контента в зависимости от выбранного индекса
+              _getContentForSelectedTab(),
               EndText(),
             ],
           ),

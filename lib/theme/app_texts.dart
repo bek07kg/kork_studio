@@ -22,4 +22,5 @@ class AppTexts {
   static const String exteryers = "Экстерьер";
   static const String interyers = "Интерьер";
   static const String animations = "Анимация";
+  static const String panorama360 = "360 Панорама";
 }

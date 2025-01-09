@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:kork_studio/components/animations/animated_logo_white.dart';
 import 'package:kork_studio/components/appbar_widgets/custom_appBar.dart';
 import 'package:kork_studio/components/appbar_widgets/custom_drawer.dart';
+import 'package:kork_studio/components/custom_images.dart';
 import 'package:kork_studio/components/custom_texts/end_text.dart';
-import 'package:kork_studio/routes/pages/detail_image_page.dart';
 import 'package:kork_studio/theme/app_colors.dart';
 import 'package:kork_studio/theme/app_texts.dart';
 
@@ -132,59 +132,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                 ),
               ),
-              SliverPadding(
-                padding: screenWidth < 600
-                    ? const EdgeInsets.symmetric(horizontal: 5, vertical: 30)
-                    : const EdgeInsets.symmetric(horizontal: 50, vertical: 60),
-                sliver: SliverGrid(
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: screenWidth < 600 ? 1 : 2,
-                    crossAxisSpacing: 4,
-                    mainAxisSpacing: 4,
-                    childAspectRatio: 3 / 2,
-                  ),
-                  delegate: SliverChildBuilderDelegate(
-                    (context, index) {
-                      String imagePath = imagePaths[index];
-                      bool isHovered = false;
-
-                      return StatefulBuilder(
-                        builder: (context, setState) => MouseRegion(
-                          onEnter: (_) {
-                            setState(() => isHovered = true);
-                          },
-                          onExit: (_) {
-                            setState(() => isHovered = false);
-                          },
-                          child: GestureDetector(
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) =>
-                                      DetailImagePage(imagePath: imagePath),
-                                ),
-                              );
-                            },
-                            child: Stack(
-                              fit: StackFit.expand,
-                              children: [
-                                Image.asset(imagePath, fit: BoxFit.cover),
-                                if (isHovered)
-                                  Container(
-                                    color: AppColors.appBarIconColor
-                                        .withOpacity(0.9),
-                                  ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      );
-                    },
-                    childCount: imagePaths.length,
-                  ),
-                ),
-              ),
+              CustomImages(screenWidth: screenWidth, imagePaths: imagePaths),
               EndText(),
             ],
           ),
