@@ -4,7 +4,7 @@ import 'package:kork_studio/routes/pages/contact_page.dart';
 import 'package:kork_studio/routes/pages/home_page.dart';
 import 'package:kork_studio/routes/pages/works_page.dart';
 import 'package:kork_studio/theme/app_colors.dart';
-import 'package:kork_studio/theme/app_texts.dart';
+import 'package:kork_studio/constants/app_texts.dart';
 
 class OntapTexts extends StatelessWidget {
   const OntapTexts({super.key});

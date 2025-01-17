@@ -43,15 +43,17 @@ class AllScreens extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) =>
-                            DetailImagePage(imagePath: imagePath),
+                        builder: (context) => DetailImagePage(
+                          imagePath: imagePath,
+                          relatedImages: [],
+                        ),
                       ),
                     );
                   },
                   child: Stack(
                     fit: StackFit.expand,
                     children: [
-                      Image.asset(
+                      Image.network(
                         imagePath,
                         fit: BoxFit.cover,
                       ),

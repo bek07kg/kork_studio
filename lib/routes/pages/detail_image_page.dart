@@ -3,41 +3,90 @@ import 'package:kork_studio/theme/app_colors.dart';
 
 class DetailImagePage extends StatelessWidget {
   final String imagePath; // Путь к изображению
+  final List<String>
+      relatedImages; // Список других изображений, связанных с текущим
 
-  const DetailImagePage({super.key, required this.imagePath});
+  const DetailImagePage({
+    super.key,
+    required this.imagePath,
+    required this.relatedImages,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.grey, // Фон черный для выделения изображения
+      backgroundColor: Colors.transparent,
       body: Stack(
         children: [
-          InteractiveViewer(
-            boundaryMargin: const EdgeInsets.all(double
-                .infinity), // Позволяет двигать изображение без ограничений
-            minScale: 1.0, // Минимальный масштаб (обычный размер)
-            maxScale: 100.0, // Максимальный масштаб (увеличение до 100х)
-            panEnabled: true, // Включает возможность перетаскивания изображения
-            child: Center(
-              child: Image.asset(
-                imagePath,
-                fit: BoxFit.contain, // Изображение по центру
+          // Вертикальная прокрутка всех изображений
+          Positioned.fill(
+            child: SingleChildScrollView(
+              child: Padding(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 40, vertical: 50),
+                child: Column(
+                  children: [
+                    // Основное изображение с возможностью увеличения
+                    InteractiveViewer(
+                      boundaryMargin: const EdgeInsets.all(double.infinity),
+                      minScale: 1.0,
+                      maxScale: 5.0,
+                      panEnabled: true,
+                      child: Center(
+                        child: Image.network(
+                          imagePath,
+                          width: double.infinity, // Растягиваем на весь экран
+                          height: 300, // Устанавливаем фиксированную высоту
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                    // Галерея с другими изображениями
+                    ...relatedImages.map((relatedImage) {
+                      return Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: GestureDetector(
+                          onTap: () {
+                            // Когда пользователь нажимает на изображение, открывается его в полный размер
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => DetailImagePage(
+                                  imagePath: relatedImage,
+                                  relatedImages: relatedImages,
+                                ),
+                              ),
+                            );
+                          },
+                          child: Image.network(
+                            relatedImage,
+                            width: double.infinity, // Растягиваем на весь экран
+                            height: 300, // Все изображения одинакового размера
+                            fit: BoxFit
+                                .cover, // Обеспечиваем обрезку по пропорциям
+                          ),
+                        ),
+                      );
+                    }).toList(),
+                  ],
+                ),
               ),
             ),
           ),
+          // Кнопка для закрытия страницы
           Positioned(
-            top: 40, // Отступ сверху
-            left: 20, // Отступ слева
+            top: 40,
+            left: 20,
             child: InkWell(
               onTap: () {
-                Navigator.pop(context); // Возвращаемся на предыдущий экран
+                Navigator.pop(context);
               },
               child: Container(
-                padding: const EdgeInsets.all(8), // Отступы внутри кнопки
+                padding: const EdgeInsets.all(8),
                 child: const Icon(
                   Icons.close,
-                  color: AppColors.white, // Белый крестик
-                  size: 30, // Размер иконки
+                  color: AppColors.black,
+                  size: 30,
                 ),
               ),
             ),

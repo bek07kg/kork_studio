@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:kork_studio/urls/ext_urls.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class Panorama360Screen extends StatelessWidget {
+class Panorama360Screen extends StatefulWidget {
   const Panorama360Screen({Key? key}) : super(key: key);
 
+  @override
+  State<Panorama360Screen> createState() => _Panorama360ScreenState();
+}
+
+class _Panorama360ScreenState extends State<Panorama360Screen> {
   // Пример ссылки на 360 панораму
   final String panoramaUrl = 'https://kuula.co/post/h5R5w/collection/7ZM69';
 
@@ -40,12 +46,26 @@ class Panorama360Screen extends StatelessWidget {
           child: Container(
             width: containerWidth,
             height: containerHeight,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage(
-                    'assets/images/panorama.png'), // Путь к изображению
-                fit: imageFit, // Масштабирование изображения
-              ),
+            child: Image.network(
+              ExtUrls.ext1_1,
+              fit: imageFit,
+              loadingBuilder: (context, child, progress) {
+                if (progress == null) return child;
+                return Center(
+                  child: CircularProgressIndicator(
+                    value: progress.expectedTotalBytes != null
+                        ? progress.cumulativeBytesLoaded /
+                            progress.expectedTotalBytes!
+                        : null,
+                  ),
+                );
+              },
+              errorBuilder: (context, error, stackTrace) {
+                return Text(
+                  'Ошибка загрузки изображения',
+                  style: TextStyle(color: Colors.red),
+                );
+              },
             ),
           ),
         ),

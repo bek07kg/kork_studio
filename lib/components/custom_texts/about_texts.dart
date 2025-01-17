@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kork_studio/theme/app_colors.dart';
-import 'package:kork_studio/theme/app_texts.dart';
+import 'package:kork_studio/constants/app_texts.dart';
 
 class AboutTexts extends StatelessWidget {
   const AboutTexts({super.key});

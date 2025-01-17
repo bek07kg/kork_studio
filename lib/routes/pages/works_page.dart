@@ -5,8 +5,11 @@ import 'package:kork_studio/components/appbar_widgets/custom_drawer.dart';
 import 'package:kork_studio/components/tabbar_widgets/custom_tabBar.dart';
 import 'package:kork_studio/components/custom_texts/end_text.dart';
 import 'package:kork_studio/components/works_screens/all_screens.dart';
+import 'package:kork_studio/components/works_screens/exteryers_screen.dart';
+import 'package:kork_studio/components/works_screens/interyers_screen.dart';
 import 'package:kork_studio/components/works_screens/panorama360_screen.dart';
-import 'package:kork_studio/theme/app_texts.dart';
+import 'package:kork_studio/constants/app_texts.dart';
+import 'package:kork_studio/urls/main_urls.dart';
 
 class WorksPage extends StatefulWidget {
   const WorksPage({super.key});
@@ -22,23 +25,23 @@ class _WorkPageState extends State<WorksPage> {
   // Индекс активной вкладки
   int _selectedTabIndex = 0;
 
-  final List<String> imagePaths = [
-    "assets/images/foto1.jpg",
-    "assets/images/foto2.jpg",
-    "assets/images/foto3.jpg",
-    "assets/images/foto4.jpg",
-    "assets/images/foto5.jpg",
-    "assets/images/foto6.jpg",
-    "assets/images/foto7.jpg",
-    "assets/images/foto8.jpg",
-    "assets/images/foto9.jpg",
-    "assets/images/foto10.jpg",
-    "assets/images/foto11.jpg",
-    "assets/images/foto12.jpg",
-    "assets/images/foto13.jpg",
-    "assets/images/foto14.jpg",
-    "assets/images/foto15.jpg",
-    "assets/images/foto16.jpg",
+  final List<String> imageUrls = [
+    MainUrls.m1,
+    MainUrls.m2,
+    MainUrls.m3,
+    MainUrls.m4,
+    MainUrls.m5,
+    MainUrls.m6,
+    MainUrls.m7,
+    MainUrls.m8,
+    MainUrls.m9,
+    MainUrls.m10,
+    MainUrls.m11,
+    MainUrls.m12,
+    MainUrls.m13,
+    MainUrls.m14,
+    MainUrls.m15,
+    MainUrls.m16,
   ];
 
   final List<String> tabLabels = [
@@ -79,26 +82,24 @@ class _WorkPageState extends State<WorksPage> {
       case 0:
         return AllScreens(
             screenWidth: MediaQuery.of(context).size.width,
-            imagePaths: imagePaths); // Контент для первой вкладки
+            imagePaths: imageUrls); // Контент для первой вкладки
       case 1:
         return AllScreens(
             screenWidth: MediaQuery.of(context).size.width,
             imagePaths:
-                imagePaths); // Замените на свой виджет для второй вкладки
+                imageUrls); // Замените на свой виджет для второй вкладки
       case 2:
-        return AllScreens(
-            screenWidth: MediaQuery.of(context).size.width,
-            imagePaths:
-                imagePaths); // Замените на свой виджет для третьей вкладки
+        return ExteryersScreen(
+          screenWidth: MediaQuery.of(context).size.width,
+        ); // Замените на свой виджет для третьей вкладки
       case 3:
-        return AllScreens(
-            screenWidth: MediaQuery.of(context).size.width,
-            imagePaths:
-                imagePaths); // Замените на свой виджет для четвертой вкладки
+        return InteryersScreen(
+          screenWidth: MediaQuery.of(context).size.width,
+        ); // Замените на свой виджет для четвертой вкладки
       case 4:
         return AllScreens(
             screenWidth: MediaQuery.of(context).size.width,
-            imagePaths: imagePaths);
+            imagePaths: imageUrls);
       case 5:
         return Panorama360Screen(); // Замените на свой виджет для шестой вкладки
       default:

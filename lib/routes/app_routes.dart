@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kork_studio/routes/pages/about_page.dart';
 import 'package:kork_studio/routes/pages/contact_page.dart';
-import 'package:kork_studio/routes/pages/detail_image_page.dart';
 import 'package:kork_studio/routes/pages/home_page.dart';
 import 'package:kork_studio/routes/pages/works_page.dart';
 
@@ -23,11 +22,11 @@ class AppRoutes {
       case contact:
         return MaterialPageRoute(builder: (_) => const ContactPage());
       case detailImage:
-        // Передача аргумента (imagePath) в маршрут
-        final imagePath = settings.arguments as String;
-        return MaterialPageRoute(
-          builder: (_) => DetailImagePage(imagePath: imagePath),
-        );
+      // Передача аргумента (imagePath) в маршрут
+      // final imagePath = settings.arguments as String;
+      // return MaterialPageRoute(
+      //   builder: (_) => DetailImagePage(imagePath: imagePath),
+      // );
       default:
         return MaterialPageRoute(builder: (_) => const WorksPage());
     }

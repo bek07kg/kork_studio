@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:kork_studio/components/animations/animated_logo_white.dart';
 import 'package:kork_studio/components/appbar_widgets/custom_appBar.dart';
 import 'package:kork_studio/components/appbar_widgets/custom_drawer.dart';
-import 'package:kork_studio/components/custom_images.dart';
+import 'package:kork_studio/components/main_images.dart';
 import 'package:kork_studio/components/custom_texts/end_text.dart';
 import 'package:kork_studio/theme/app_colors.dart';
-import 'package:kork_studio/theme/app_texts.dart';
+import 'package:kork_studio/constants/app_texts.dart';
+import 'package:kork_studio/urls/main_urls.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -19,24 +20,24 @@ class _MyHomePageState extends State<MyHomePage> {
   bool _isLogoVisible = false; // Логотип
   bool _isTextVisible = true; // Текст
 
-  final List<String> imagePaths = [
-    "assets/images/foto1.jpg",
-    "assets/images/foto2.jpg",
-    "assets/images/foto3.jpg",
-    "assets/images/foto4.jpg",
-    "assets/images/foto5.jpg",
-    "assets/images/foto6.jpg",
-    "assets/images/foto7.jpg",
-    "assets/images/foto8.jpg",
-    "assets/images/foto9.jpg",
-    "assets/images/foto10.jpg",
-    "assets/images/foto11.jpg",
-    "assets/images/foto12.jpg",
-    "assets/images/foto13.jpg",
-    "assets/images/foto14.jpg",
-    "assets/images/foto15.jpg",
-    "assets/images/foto16.jpg",
-  ];
+  List<String> imageUrls = [
+    MainUrls.m1,
+    MainUrls.m2,
+    MainUrls.m3,
+    MainUrls.m4,
+    MainUrls.m5,
+    MainUrls.m6,
+    MainUrls.m7,
+    MainUrls.m8,
+    MainUrls.m9,
+    MainUrls.m10,
+    MainUrls.m11,
+    MainUrls.m12,
+    MainUrls.m13,
+    MainUrls.m14,
+    MainUrls.m15,
+    MainUrls.m16,
+  ]; // Список для хранения URL-ов изображений
 
   @override
   void initState() {
@@ -132,7 +133,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                 ),
               ),
-              CustomImages(screenWidth: screenWidth, imagePaths: imagePaths),
+              MainImages(screenWidth: screenWidth, imageUrls: imageUrls),
               EndText(),
             ],
           ),
