@@ -5,6 +5,7 @@ import 'package:kork_studio/components/appbar_widgets/custom_drawer.dart';
 import 'package:kork_studio/components/tabbar_widgets/custom_tabBar.dart';
 import 'package:kork_studio/components/custom_texts/end_text.dart';
 import 'package:kork_studio/components/works_screens/all_screens.dart';
+import 'package:kork_studio/components/works_screens/conceps_screen.dart';
 import 'package:kork_studio/components/works_screens/exteryers_screen.dart';
 import 'package:kork_studio/components/works_screens/interyers_screen.dart';
 import 'package:kork_studio/components/works_screens/panorama360_screen.dart';
@@ -84,10 +85,9 @@ class _WorkPageState extends State<WorksPage> {
             screenWidth: MediaQuery.of(context).size.width,
             imagePaths: imageUrls); // Контент для первой вкладки
       case 1:
-        return AllScreens(
-            screenWidth: MediaQuery.of(context).size.width,
-            imagePaths:
-                imageUrls); // Замените на свой виджет для второй вкладки
+        return ConcepsScreen(
+          screenWidth: MediaQuery.of(context).size.width,
+        ); // Замените на свой виджет для второй вкладки
       case 2:
         return ExteryersScreen(
           screenWidth: MediaQuery.of(context).size.width,

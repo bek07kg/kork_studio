@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:kork_studio/routes/pages/detail_image_page.dart';
+import 'package:kork_studio/components/works_screens/detail_image_screen.dart';
+import 'package:kork_studio/theme/app_colors.dart';
 import 'package:kork_studio/urls/int_urls.dart';
 
 class InteryersScreen extends StatelessWidget {
@@ -16,7 +17,14 @@ class InteryersScreen extends StatelessWidget {
     final List<String> imageUrls = [
       IntUrls.int1_1,
       IntUrls.int2_1,
+      // Добавь сюда все остальные изображения, например, ExtUrls.ext3_1, и так далее
     ];
+
+    // Создаём Map, где ключом будет индекс, а значением список изображений для этого индекса
+    final Map<String, List<String>> relatedImagesMap = {
+      IntUrls.int1_1: IntUrls.i1,
+      IntUrls.int2_1: IntUrls.i2, // Список изображений для ext1_1
+    };
 
     return SliverPadding(
       padding: screenWidth < 600
@@ -33,39 +41,47 @@ class InteryersScreen extends StatelessWidget {
           (context, index) {
             String imageUrl = imageUrls[index];
 
-            // Определяем список изображений для этого проекта
-            List<String> relatedImages = [];
-            if (imageUrl == IntUrls.int1_1) {
-              relatedImages = IntUrls.i1; // Список изображений для int1_1
-            } else if (imageUrl == IntUrls.int2_1) {
-              relatedImages = IntUrls.i2; // Список изображений для int2_1
-            }
+            // Получаем список связанных изображений по ключу (индексу)
+            List<String> relatedImages = relatedImagesMap[imageUrl] ?? [];
 
-            return GestureDetector(
-              onTap: () {
-                // Передаем в DetailImagePage нужный список изображений
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => DetailImagePage(
-                      imagePath: imageUrl, // Передаем первое изображение
-                      relatedImages:
-                          relatedImages, // Передаем список остальных изображений
-                    ),
-                  ),
-                );
-              },
-              child: Stack(
-                fit: StackFit.expand,
-                children: [
-                  Image.network(
-                    imageUrl, // Загружаем изображение по URL
-                    fit: BoxFit.cover,
-                  ),
+            bool isHovered = false;
 
-                  // Показать затемнение при наведении (если нужно)
-                  // можно добавить эффект при наведении
-                ],
+            return StatefulBuilder(
+              builder: (context, setState) => MouseRegion(
+                onEnter: (_) {
+                  setState(() => isHovered = true);
+                },
+                onExit: (_) {
+                  setState(() => isHovered = false);
+                },
+                child: GestureDetector(
+                  onTap: () {
+                    // Передаем в DetailImagePage нужный список изображений
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => DetailImageScreen(
+                          imagePath: imageUrl, // Передаем первое изображение
+                          relatedImages:
+                              relatedImages, // Передаем список остальных изображений
+                        ),
+                      ),
+                    );
+                  },
+                  child: Stack(
+                    fit: StackFit.expand,
+                    children: [
+                      Image.network(
+                        imageUrl, // Загружаем изображение по URL
+                        fit: BoxFit.cover,
+                      ),
+                      if (isHovered)
+                        Container(
+                          color: AppColors.appBarIconColor.withOpacity(0.9),
+                        ),
+                    ],
+                  ),
+                ),
               ),
             );
           },

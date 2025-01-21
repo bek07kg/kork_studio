@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kork_studio/routes/pages/detail_image_page.dart';
+import 'package:kork_studio/components/works_screens/detail_image_screen.dart';
 import 'package:kork_studio/theme/app_colors.dart';
 import 'package:kork_studio/urls/ext_urls.dart';
 
@@ -13,10 +13,40 @@ class ExteryersScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Список URL-адресов изображений
+    // Список URL-адресов изображений для отображения в сетке
     final List<String> imageUrls = [
       ExtUrls.ext1_1,
+      ExtUrls.ext2_1,
+      ExtUrls.ext3_1,
+      ExtUrls.ext4_1,
+      ExtUrls.ext5_1,
+      ExtUrls.ext6_1,
+      ExtUrls.ext7_1,
+      ExtUrls.ext8_1,
+      ExtUrls.ext9_1,
+      ExtUrls.ext10_1,
+      ExtUrls.ext11_1,
+      ExtUrls.ext12_1,
+      ExtUrls.ext13_1,
+      // Добавь сюда все остальные изображения, например, ExtUrls.ext3_1, и так далее
     ];
+
+    // Создаём Map, где ключом будет индекс, а значением список изображений для этого индекса
+    final Map<String, List<String>> relatedImagesMap = {
+      ExtUrls.ext1_1: ExtUrls.e1, // Список изображений для ext1_1
+      ExtUrls.ext2_1: ExtUrls.e2,
+      ExtUrls.ext3_1: ExtUrls.e3,
+      ExtUrls.ext4_1: ExtUrls.e4,
+      ExtUrls.ext5_1: ExtUrls.e5,
+      ExtUrls.ext6_1: ExtUrls.e6,
+      ExtUrls.ext7_1: ExtUrls.e7,
+      ExtUrls.ext8_1: ExtUrls.e8,
+      ExtUrls.ext9_1: ExtUrls.e9,
+      ExtUrls.ext10_1: ExtUrls.e10,
+      ExtUrls.ext11_1: ExtUrls.e11,
+      ExtUrls.ext12_1: ExtUrls.e12,
+      ExtUrls.ext13_1: ExtUrls.e13,
+    };
 
     return SliverPadding(
       padding: screenWidth < 600
@@ -31,9 +61,12 @@ class ExteryersScreen extends StatelessWidget {
         ),
         delegate: SliverChildBuilderDelegate(
           (context, index) {
-            String imageUrl = imageUrls[index]; // Получаем URL изображения
+            String imageUrl = imageUrls[index];
 
-            bool isHovered = false; // Флаг для отслеживания наведения
+            // Получаем список связанных изображений по ключу (индексу)
+            List<String> relatedImages = relatedImagesMap[imageUrl] ?? [];
+
+            bool isHovered = false;
 
             return StatefulBuilder(
               builder: (context, setState) => MouseRegion(
@@ -45,13 +78,15 @@ class ExteryersScreen extends StatelessWidget {
                 },
                 child: GestureDetector(
                   onTap: () {
+                    // Передаем в DetailImagePage нужный список изображений
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => DetailImagePage(
-                          imagePath: imageUrl,
-                          relatedImages: [],
-                        ), // Передаем URL в детализированную страницу
+                        builder: (context) => DetailImageScreen(
+                          imagePath: imageUrl, // Передаем первое изображение
+                          relatedImages:
+                              relatedImages, // Передаем список остальных изображений
+                        ),
                       ),
                     );
                   },
@@ -72,7 +107,7 @@ class ExteryersScreen extends StatelessWidget {
               ),
             );
           },
-          childCount: imageUrls.length, // Количество изображений
+          childCount: imageUrls.length,
         ),
       ),
     );

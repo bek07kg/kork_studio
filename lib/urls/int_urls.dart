@@ -19,6 +19,7 @@ class IntUrls {
       "https://storage.googleapis.com/korkstudio/int/int1_9.jpg";
 
   static const List<String> i1 = [
+    int1_1,
     int1_2,
     int1_3,
     int1_4,
@@ -41,6 +42,7 @@ class IntUrls {
       "https://storage.googleapis.com/korkstudio/int/int2_5.jpg";
 
   static const List<String> i2 = [
+    int1_1,
     int2_2,
     int2_3,
     int2_4,
