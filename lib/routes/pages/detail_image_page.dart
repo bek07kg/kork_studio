@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kork_studio/components/cached_network_image.dart';
 import 'package:kork_studio/theme/app_colors.dart';
 
 class DetailImagePage extends StatelessWidget {
@@ -33,12 +34,7 @@ class DetailImagePage extends StatelessWidget {
                       maxScale: 5.0,
                       panEnabled: true,
                       child: Center(
-                        child: Image.network(
-                          imagePath,
-                          width: double.infinity, // Растягиваем на весь экран
-                          height: 300, // Устанавливаем фиксированную высоту
-                          fit: BoxFit.cover,
-                        ),
+                        child: CachedImageWidget(imageUrl: imagePath),
                       ),
                     ),
                     // Галерея с другими изображениями
@@ -58,13 +54,7 @@ class DetailImagePage extends StatelessWidget {
                               ),
                             );
                           },
-                          child: Image.network(
-                            relatedImage,
-                            width: double.infinity, // Растягиваем на весь экран
-                            height: 300, // Все изображения одинакового размера
-                            fit: BoxFit
-                                .cover, // Обеспечиваем обрезку по пропорциям
-                          ),
+                          child: CachedImageWidget(imageUrl: relatedImage),
                         ),
                       );
                     }).toList(),

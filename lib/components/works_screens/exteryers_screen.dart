@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kork_studio/components/cached_network_image.dart';
 import 'package:kork_studio/components/works_screens/detail_image_screen.dart';
 import 'package:kork_studio/theme/app_colors.dart';
 import 'package:kork_studio/urls/ext_urls.dart';
@@ -28,6 +29,13 @@ class ExteryersScreen extends StatelessWidget {
       ExtUrls.ext11_1,
       ExtUrls.ext12_1,
       ExtUrls.ext13_1,
+      ExtUrls.ext14_1,
+      ExtUrls.ext15_1,
+      ExtUrls.ext16_1,
+      ExtUrls.ext17_1,
+      ExtUrls.ext18_1,
+      ExtUrls.ext19_1,
+
       // Добавь сюда все остальные изображения, например, ExtUrls.ext3_1, и так далее
     ];
 
@@ -46,6 +54,12 @@ class ExteryersScreen extends StatelessWidget {
       ExtUrls.ext11_1: ExtUrls.e11,
       ExtUrls.ext12_1: ExtUrls.e12,
       ExtUrls.ext13_1: ExtUrls.e13,
+      ExtUrls.ext14_1: ExtUrls.e14,
+      ExtUrls.ext15_1: ExtUrls.e15,
+      ExtUrls.ext16_1: ExtUrls.e16,
+      ExtUrls.ext17_1: ExtUrls.e17,
+      ExtUrls.ext18_1: ExtUrls.e18,
+      ExtUrls.ext19_1: ExtUrls.e19,
     };
 
     return SliverPadding(
@@ -93,10 +107,7 @@ class ExteryersScreen extends StatelessWidget {
                   child: Stack(
                     fit: StackFit.expand,
                     children: [
-                      Image.network(
-                        imageUrl, // Загружаем изображение по URL
-                        fit: BoxFit.cover,
-                      ),
+                      CachedImageWidget(imageUrl: imageUrl),
                       if (isHovered)
                         Container(
                           color: AppColors.appBarIconColor.withOpacity(0.9),

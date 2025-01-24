@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:kork_studio/components/animations/animated_logo_white.dart';
 import 'package:kork_studio/components/appbar_widgets/custom_appBar.dart';
 import 'package:kork_studio/components/appbar_widgets/custom_drawer.dart';
+import 'package:kork_studio/components/cached_network_image.dart';
 import 'package:kork_studio/components/custom_texts/end_text.dart';
 import 'package:kork_studio/theme/app_colors.dart';
 
@@ -96,10 +97,7 @@ class _DetailImageScreenState extends State<DetailImageScreen> {
                           child: Stack(
                             fit: StackFit.expand,
                             children: [
-                              Image.network(
-                                image,
-                                fit: BoxFit.cover,
-                              ),
+                              CachedImageWidget(imageUrl: image),
                               if (_isHovered[index])
                                 Container(
                                   color: AppColors.appBarIconColor
@@ -136,10 +134,7 @@ class _DetailImageScreenState extends State<DetailImageScreen> {
                         minScale: 1.0,
                         maxScale: 5.0,
                         panEnabled: true,
-                        child: Image.network(
-                          _selectedImage!,
-                          fit: BoxFit.contain,
-                        ),
+                        child: CachedImageWidget(imageUrl: _selectedImage!),
                       ),
                     ),
                     Positioned(

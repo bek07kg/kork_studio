@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kork_studio/components/cached_network_image.dart';
 import 'package:kork_studio/components/works_screens/detail_image_screen.dart';
 import 'package:kork_studio/theme/app_colors.dart';
 import 'package:kork_studio/urls/con_urls.dart';
@@ -16,12 +17,14 @@ class ConcepsScreen extends StatelessWidget {
     // Список URL-адресов изображений для отображения в сетке
     final List<String> imageUrls = [
       ConUrls.con1_1,
+      ConUrls.con2_1,
       // Добавь сюда все остальные изображения, например, ExtUrls.ext3_1, и так далее
     ];
 
     // Создаём Map, где ключом будет индекс, а значением список изображений для этого индекса
     final Map<String, List<String>> relatedImagesMap = {
       ConUrls.con1_1: ConUrls.c1,
+      ConUrls.con2_1: ConUrls.c2,
       // Список изображений для ext1_1
     };
 
@@ -70,10 +73,7 @@ class ConcepsScreen extends StatelessWidget {
                   child: Stack(
                     fit: StackFit.expand,
                     children: [
-                      Image.network(
-                        imageUrl, // Загружаем изображение по URL
-                        fit: BoxFit.cover,
-                      ),
+                      CachedImageWidget(imageUrl: imageUrl),
                       if (isHovered)
                         Container(
                           color: AppColors.appBarIconColor.withOpacity(0.9),

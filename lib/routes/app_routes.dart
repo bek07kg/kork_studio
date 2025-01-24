@@ -9,7 +9,6 @@ class AppRoutes {
   static const String works = '/works';
   static const String about = '/about';
   static const String contact = '/contact';
-  static const String detailImage = '/detailImage';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -21,12 +20,6 @@ class AppRoutes {
         return MaterialPageRoute(builder: (_) => const AboutPage());
       case contact:
         return MaterialPageRoute(builder: (_) => const ContactPage());
-      case detailImage:
-      // Передача аргумента (imagePath) в маршрут
-      // final imagePath = settings.arguments as String;
-      // return MaterialPageRoute(
-      //   builder: (_) => DetailImagePage(imagePath: imagePath),
-      // );
       default:
         return MaterialPageRoute(builder: (_) => const WorksPage());
     }

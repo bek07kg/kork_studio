@@ -82,8 +82,8 @@ class _WorkPageState extends State<WorksPage> {
     switch (_selectedTabIndex) {
       case 0:
         return AllScreens(
-            screenWidth: MediaQuery.of(context).size.width,
-            imagePaths: imageUrls); // Контент для первой вкладки
+          screenWidth: MediaQuery.of(context).size.width,
+        ); // Контент для первой вкладки
       case 1:
         return ConcepsScreen(
           screenWidth: MediaQuery.of(context).size.width,
@@ -98,8 +98,8 @@ class _WorkPageState extends State<WorksPage> {
         ); // Замените на свой виджет для четвертой вкладки
       case 4:
         return AllScreens(
-            screenWidth: MediaQuery.of(context).size.width,
-            imagePaths: imageUrls);
+          screenWidth: MediaQuery.of(context).size.width,
+        );
       case 5:
         return Panorama360Screen(); // Замените на свой виджет для шестой вкладки
       default:
