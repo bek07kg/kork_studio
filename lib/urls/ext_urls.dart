@@ -330,13 +330,13 @@ class ExtUrls {
   ];
 
   static const String ext11_1 =
-      "https://storage.googleapis.com/korkstudio/ext/ext11_1.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext11_1.webp";
   static const String ext11_2 =
-      "https://storage.googleapis.com/korkstudio/ext/ext11_2.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext11_2.webp";
   static const String ext11_3 =
-      "https://storage.googleapis.com/korkstudio/ext/ext11_3.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext11_3.webp";
   static const String ext11_4 =
-      "https://storage.googleapis.com/korkstudio/ext/ext11_4.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext11_4.webp";
 
   static const List<String> e11 = [
     ext11_1,
@@ -346,19 +346,19 @@ class ExtUrls {
   ];
 
   static const String ext12_1 =
-      "https://storage.googleapis.com/korkstudio/ext/ext12_1.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext12_1.webp";
   static const String ext12_2 =
-      "https://storage.googleapis.com/korkstudio/ext/ext12_2.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext12_2.webp";
   static const String ext12_3 =
-      "https://storage.googleapis.com/korkstudio/ext/ext12_3.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext12_3.webp";
   static const String ext12_4 =
-      "https://storage.googleapis.com/korkstudio/ext/ext12_4.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext12_4.webp";
   static const String ext12_5 =
-      "https://storage.googleapis.com/korkstudio/ext/ext12_5.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext12_5.webp";
   static const String ext12_6 =
-      "https://storage.googleapis.com/korkstudio/ext/ext12_6.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext12_6.webp";
   static const String ext12_7 =
-      "https://storage.googleapis.com/korkstudio/ext/ext12_7.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext12_7.webp";
 
   static const List<String> e12 = [
     ext12_1,
@@ -371,29 +371,29 @@ class ExtUrls {
   ];
 
   static const String ext13_1 =
-      "https://storage.googleapis.com/korkstudio/ext/ext13_1.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext13_1.webp";
   static const String ext13_2 =
-      "https://storage.googleapis.com/korkstudio/ext/ext13_2.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext13_2.webp";
   static const String ext13_3 =
-      "https://storage.googleapis.com/korkstudio/ext/ext13_3.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext13_3.webp";
   static const String ext13_4 =
-      "https://storage.googleapis.com/korkstudio/ext/ext13_4.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext13_4.webp";
   static const String ext13_5 =
-      "https://storage.googleapis.com/korkstudio/ext/ext13_5.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext13_5.webp";
   static const String ext13_6 =
-      "https://storage.googleapis.com/korkstudio/ext/ext13_6.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext13_6.webp";
   static const String ext13_7 =
-      "https://storage.googleapis.com/korkstudio/ext/ext13_7.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext13_7.webp";
   static const String ext13_8 =
-      "https://storage.googleapis.com/korkstudio/ext/ext13_8.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext13_8.webp";
   static const String ext13_9 =
-      "https://storage.googleapis.com/korkstudio/ext/ext13_9.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext13_9.webp";
   static const String ext13_10 =
-      "https://storage.googleapis.com/korkstudio/ext/ext13_10.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext13_10.webp";
   static const String ext13_11 =
-      "https://storage.googleapis.com/korkstudio/ext/ext13_11.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext13_11.webp";
   static const String ext13_12 =
-      "https://storage.googleapis.com/korkstudio/ext/ext13_12.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext13_12.webp";
 
   static const List<String> e13 = [
     ext13_1,
@@ -411,21 +411,21 @@ class ExtUrls {
   ];
 
   static const String ext14_1 =
-      "https://storage.googleapis.com/korkstudio/con/con1_1.jpg";
+      "https://storage.googleapis.com/korkstudio/con/con1_1.webp";
   static const String ext14_2 =
-      "https://storage.googleapis.com/korkstudio/con/con1_2.jpg";
+      "https://storage.googleapis.com/korkstudio/con/con1_2.webp";
   static const String ext14_3 =
-      "https://storage.googleapis.com/korkstudio/con/con1_3.jpg";
+      "https://storage.googleapis.com/korkstudio/con/con1_3.webp";
   static const String ext14_4 =
-      "https://storage.googleapis.com/korkstudio/con/con1_4.jpg";
+      "https://storage.googleapis.com/korkstudio/con/con1_4.webp";
   static const String ext14_5 =
-      "https://storage.googleapis.com/korkstudio/con/con1_5.jpg";
+      "https://storage.googleapis.com/korkstudio/con/con1_5.webp";
   static const String ext14_6 =
-      "https://storage.googleapis.com/korkstudio/con/con1_6.jpg";
+      "https://storage.googleapis.com/korkstudio/con/con1_6.webp";
   static const String ext14_7 =
-      "https://storage.googleapis.com/korkstudio/con/con1_7.jpg";
+      "https://storage.googleapis.com/korkstudio/con/con1_7.webp";
   static const String ext14_8 =
-      "https://storage.googleapis.com/korkstudio/con/con1_8.jpg";
+      "https://storage.googleapis.com/korkstudio/con/con1_8.webp";
 
   static const List<String> e14 = [
     ext14_1,
@@ -439,41 +439,41 @@ class ExtUrls {
   ];
 
   static const String ext15_1 =
-      "https://storage.googleapis.com/korkstudio/con/con2_1.jpg";
+      "https://storage.googleapis.com/korkstudio/con/con2_1.webp";
   static const String ext15_2 =
-      "https://storage.googleapis.com/korkstudio/con/con2_2.jpg";
+      "https://storage.googleapis.com/korkstudio/con/con2_2.webp";
   static const String ext15_3 =
-      "https://storage.googleapis.com/korkstudio/con/con2_3.jpg";
+      "https://storage.googleapis.com/korkstudio/con/con2_3.webp";
   static const String ext15_4 =
-      "https://storage.googleapis.com/korkstudio/con/con2_4.jpg";
+      "https://storage.googleapis.com/korkstudio/con/con2_4.webp";
   static const String ext15_5 =
-      "https://storage.googleapis.com/korkstudio/con/con2_5.jpg";
+      "https://storage.googleapis.com/korkstudio/con/con2_5.webp";
   static const String ext15_6 =
-      "https://storage.googleapis.com/korkstudio/con/con2_6.jpg";
+      "https://storage.googleapis.com/korkstudio/con/con2_6.webp";
   static const String ext15_7 =
-      "https://storage.googleapis.com/korkstudio/con/con2_7.jpg";
+      "https://storage.googleapis.com/korkstudio/con/con2_7.webp";
   static const String ext15_8 =
-      "https://storage.googleapis.com/korkstudio/con/con2_8.jpg";
+      "https://storage.googleapis.com/korkstudio/con/con2_8.webp";
   static const String ext15_9 =
-      "https://storage.googleapis.com/korkstudio/con/con2_9.jpg";
+      "https://storage.googleapis.com/korkstudio/con/con2_9.webp";
   static const String ext15_10 =
-      "https://storage.googleapis.com/korkstudio/con/con2_10.jpg";
+      "https://storage.googleapis.com/korkstudio/con/con2_10.webp";
   static const String ext15_11 =
-      "https://storage.googleapis.com/korkstudio/con/con2_11.jpg";
+      "https://storage.googleapis.com/korkstudio/con/con2_11.webp";
   static const String ext15_12 =
-      "https://storage.googleapis.com/korkstudio/con/con2_12.jpg";
+      "https://storage.googleapis.com/korkstudio/con/con2_12.webp";
   static const String ext15_13 =
-      "https://storage.googleapis.com/korkstudio/con/con2_13.jpg";
+      "https://storage.googleapis.com/korkstudio/con/con2_13.webp";
   static const String ext15_14 =
-      "https://storage.googleapis.com/korkstudio/con/con2_14.jpg";
+      "https://storage.googleapis.com/korkstudio/con/con2_14.webp";
   static const String ext15_15 =
-      "https://storage.googleapis.com/korkstudio/con/con2_15.jpg";
+      "https://storage.googleapis.com/korkstudio/con/con2_15.webp";
   static const String ext15_16 =
-      "https://storage.googleapis.com/korkstudio/con/con2_16.jpg";
+      "https://storage.googleapis.com/korkstudio/con/con2_16.webp";
   static const String ext15_17 =
-      "https://storage.googleapis.com/korkstudio/con/con2_18.jpg";
+      "https://storage.googleapis.com/korkstudio/con/con2_17.webp";
   static const String ext15_18 =
-      "https://storage.googleapis.com/korkstudio/con/con2_18.jpg";
+      "https://storage.googleapis.com/korkstudio/con/con2_18.webp";
 
   static const List<String> e15 = [
     ext15_1,
@@ -497,19 +497,19 @@ class ExtUrls {
   ];
 
   static const String ext16_1 =
-      "https://storage.googleapis.com/korkstudio/ext/ext16_1.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext16_1.webp";
   static const String ext16_2 =
-      "https://storage.googleapis.com/korkstudio/ext/ext16_2.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext16_2.webp";
   static const String ext16_3 =
-      "https://storage.googleapis.com/korkstudio/ext/ext16_3.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext16_3.webp";
   static const String ext16_4 =
-      "https://storage.googleapis.com/korkstudio/ext/ext16_4.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext16_4.webp";
   static const String ext16_5 =
-      "https://storage.googleapis.com/korkstudio/ext/ext16_5.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext16_5.webp";
   static const String ext16_6 =
-      "https://storage.googleapis.com/korkstudio/ext/ext16_6.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext16_6.webp";
   static const String ext16_7 =
-      "https://storage.googleapis.com/korkstudio/ext/ext16_7.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext16_7.webp";
 
   static const List<String> e16 = [
     ext16_1,
@@ -535,13 +535,13 @@ class ExtUrls {
   ];
 
   static const String ext18_1 =
-      "https://storage.googleapis.com/korkstudio/ext/ext18_1.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext18_1.webp";
   static const String ext18_2 =
-      "https://storage.googleapis.com/korkstudio/ext/ext18_2.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext18_2.webp";
   static const String ext18_3 =
-      "https://storage.googleapis.com/korkstudio/ext/ext18_3.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext18_3.webp";
   static const String ext18_4 =
-      "https://storage.googleapis.com/korkstudio/ext/ext18_4.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext18_4.webp";
 
   static const List<String> e18 = [
     ext18_1,
@@ -551,15 +551,15 @@ class ExtUrls {
   ];
 
   static const String ext19_1 =
-      "https://storage.googleapis.com/korkstudio/ext/ext19_1.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext19_1.webp";
   static const String ext19_2 =
-      "https://storage.googleapis.com/korkstudio/ext/ext19_2.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext19_2.webp";
   static const String ext19_3 =
-      "https://storage.googleapis.com/korkstudio/ext/ext19_3.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext19_3.webp";
   static const String ext19_4 =
-      "https://storage.googleapis.com/korkstudio/ext/ext19_4.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext19_4.webp";
   static const String ext19_5 =
-      "https://storage.googleapis.com/korkstudio/ext/ext19_5.jpg";
+      "https://storage.googleapis.com/korkstudio/ext/ext19_5.webp";
 
   static const List<String> e19 = [
     ext19_1,

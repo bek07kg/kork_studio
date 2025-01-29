@@ -1,20 +1,12 @@
 class ConUrls {
-  static const String con1_1 =
-      "https://storage.googleapis.com/korkstudio/con/con1_1.jpg";
-  static const String con1_2 =
-      "https://storage.googleapis.com/korkstudio/con/con1_2.jpg";
-  static const String con1_3 =
-      "https://storage.googleapis.com/korkstudio/con/con1_3.jpg";
-  static const String con1_4 =
-      "https://storage.googleapis.com/korkstudio/con/con1_4.jpg";
-  static const String con1_5 =
-      "https://storage.googleapis.com/korkstudio/con/con1_5.jpg";
-  static const String con1_6 =
-      "https://storage.googleapis.com/korkstudio/con/con1_6.jpg";
-  static const String con1_7 =
-      "https://storage.googleapis.com/korkstudio/con/con1_7.jpg";
-  static const String con1_8 =
-      "https://storage.googleapis.com/korkstudio/con/con1_8.jpg";
+  static const String con1_1 = "assets/images/con1_1.webp";
+  static const String con1_2 = "assets/images/con1_2.webp";
+  static const String con1_3 = "assets/images/con1_3.webp";
+  static const String con1_4 = "assets/images/con1_4.webp";
+  static const String con1_5 = "assets/images/con1_5.webp";
+  static const String con1_6 = "assets/images/con1_6.webp";
+  static const String con1_7 = "assets/images/con1_7.webp";
+  static const String con1_8 = "assets/images/con1_8.webp";
 
   static const List<String> c1 = [
     con1_1,
@@ -27,42 +19,24 @@ class ConUrls {
     con1_8,
   ];
 
-  static const String con2_1 =
-      "https://storage.googleapis.com/korkstudio/con/con2_1.jpg";
-  static const String con2_2 =
-      "https://storage.googleapis.com/korkstudio/con/con2_2.jpg";
-  static const String con2_3 =
-      "https://storage.googleapis.com/korkstudio/con/con2_3.jpg";
-  static const String con2_4 =
-      "https://storage.googleapis.com/korkstudio/con/con2_4.jpg";
-  static const String con2_5 =
-      "https://storage.googleapis.com/korkstudio/con/con2_5.jpg";
-  static const String con2_6 =
-      "https://storage.googleapis.com/korkstudio/con/con2_6.jpg";
-  static const String con2_7 =
-      "https://storage.googleapis.com/korkstudio/con/con2_7.jpg";
-  static const String con2_8 =
-      "https://storage.googleapis.com/korkstudio/con/con2_8.jpg";
-  static const String con2_9 =
-      "https://storage.googleapis.com/korkstudio/con/con2_9.jpg";
-  static const String con2_10 =
-      "https://storage.googleapis.com/korkstudio/con/con2_10.jpg";
-  static const String con2_11 =
-      "https://storage.googleapis.com/korkstudio/con/con2_11.jpg";
-  static const String con2_12 =
-      "https://storage.googleapis.com/korkstudio/con/con2_12.jpg";
-  static const String con2_13 =
-      "https://storage.googleapis.com/korkstudio/con/con2_13.jpg";
-  static const String con2_14 =
-      "https://storage.googleapis.com/korkstudio/con/con2_14.jpg";
-  static const String con2_15 =
-      "https://storage.googleapis.com/korkstudio/con/con2_15.jpg";
-  static const String con2_16 =
-      "https://storage.googleapis.com/korkstudio/con/con2_16.jpg";
-  static const String con2_17 =
-      "https://storage.googleapis.com/korkstudio/con/con2_18.jpg";
-  static const String con2_18 =
-      "https://storage.googleapis.com/korkstudio/con/con2_18.jpg";
+  static const String con2_1 = "assets/images/con2_1.webp";
+  static const String con2_2 = "assets/images/con2_2.webp";
+  static const String con2_3 = "assets/images/con2_3.webp";
+  static const String con2_4 = "assets/images/con2_4.webp";
+  static const String con2_5 = "assets/images/con2_5.webp";
+  static const String con2_6 = "assets/images/con2_6.webp";
+  static const String con2_7 = "assets/images/con2_7.webp";
+  static const String con2_8 = "assets/images/con2_8.webp";
+  static const String con2_9 = "assets/images/con2_9.webp";
+  static const String con2_10 = "assets/images/con2_10.webp";
+  static const String con2_11 = "assets/images/con2_11.webp";
+  static const String con2_12 = "assets/images/con2_12.webp";
+  static const String con2_13 = "assets/images/con2_13.webp";
+  static const String con2_14 = "assets/images/con2_14.webp";
+  static const String con2_15 = "assets/images/con2_15.webp";
+  static const String con2_16 = "assets/images/con2_16.webp";
+  static const String con2_17 = "assets/images/con2_17.webp";
+  static const String con2_18 = "assets/images/con2_18.webp";
 
   static const List<String> c2 = [
     con2_1,
