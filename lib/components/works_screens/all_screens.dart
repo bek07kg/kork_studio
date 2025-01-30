@@ -1,4 +1,3 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:kork_studio/components/cached_network_image.dart';
 import 'package:kork_studio/components/works_screens/detail_image_screen.dart';
@@ -8,10 +7,7 @@ import 'package:kork_studio/urls/ext_urls.dart';
 import 'package:kork_studio/urls/int_urls.dart';
 
 class AllScreens extends StatefulWidget {
-  const AllScreens({
-    super.key,
-    required this.screenWidth,
-  });
+  const AllScreens({super.key, required this.screenWidth});
 
   final double screenWidth;
 
@@ -84,25 +80,6 @@ class _AllScreensState extends State<AllScreens> {
     IntUrls.int9_1: IntUrls.i9,
   };
 
-  void _preloadImages(List<String> imageUrls) async {
-    final futures = imageUrls.map((url) async {
-      try {
-        await CachedNetworkImageProvider(url)
-            .evict(); // Эвикация изображения из кэша
-      } catch (error) {
-        print("Ошибка при эвикации изображения: $url");
-      }
-    }).toList();
-
-    await Future.wait(futures); // Загружаем все изображения параллельно
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    _preloadImages(imageUrls); // Передаём список всех URL картинок
-  }
-
   @override
   Widget build(BuildContext context) {
     return SliverPadding(
@@ -120,38 +97,39 @@ class _AllScreensState extends State<AllScreens> {
           (context, index) {
             String imageUrl = imageUrls[index];
             List<String> relatedImages = relatedImagesMap[imageUrl] ?? [];
-            bool isHovered = false;
+            ValueNotifier<bool> isHovered = ValueNotifier(false);
 
-            return StatefulBuilder(
-              builder: (context, setState) => MouseRegion(
-                onEnter: (_) {
-                  setState(() => isHovered = true);
-                },
-                onExit: (_) {
-                  setState(() => isHovered = false);
-                },
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => DetailImageScreen(
-                          imagePath: imageUrl,
-                          relatedImages: relatedImages,
-                        ),
+            return MouseRegion(
+              onEnter: (_) => isHovered.value = true,
+              onExit: (_) => isHovered.value = false,
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => DetailImageScreen(
+                        imagePath: imageUrl,
+                        relatedImages: relatedImages,
                       ),
+                    ),
+                  );
+                },
+                child: ValueListenableBuilder<bool>(
+                  valueListenable: isHovered,
+                  builder: (context, hover, child) {
+                    return Stack(
+                      fit: StackFit.expand,
+                      children: [
+                        CachedImageWidget(
+                          imageUrl: imageUrl,
+                        ),
+                        if (hover)
+                          Container(
+                            color: AppColors.appBarIconColor.withOpacity(0.9),
+                          ),
+                      ],
                     );
                   },
-                  child: Stack(
-                    fit: StackFit.expand,
-                    children: [
-                      CachedImageWidget(imageUrl: imageUrl),
-                      if (isHovered)
-                        Container(
-                          color: AppColors.appBarIconColor.withOpacity(0.9),
-                        ),
-                    ],
-                  ),
                 ),
               ),
             );

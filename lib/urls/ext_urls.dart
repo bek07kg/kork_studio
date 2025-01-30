@@ -1,32 +1,18 @@
 class ExtUrls {
-  static const String ext1_1 =
-      "https://storage.googleapis.com/korkstudio/ext/ext1_1.webp";
-  static const String ext1_2 =
-      "https://storage.googleapis.com/korkstudio/ext/ext1_2.webp";
-  static const String ext1_3 =
-      "https://storage.googleapis.com/korkstudio/ext/ext1_3.webp";
-  static const String ext1_4 =
-      "https://storage.googleapis.com/korkstudio/ext/ext1_4.webp";
-  static const String ext1_5 =
-      "https://storage.googleapis.com/korkstudio/ext/ext1_5.webp";
-  static const String ext1_6 =
-      "https://storage.googleapis.com/korkstudio/ext/ext1_6.webp";
-  static const String ext1_7 =
-      "https://storage.googleapis.com/korkstudio/ext/ext1_7.webp";
-  static const String ext1_8 =
-      "https://storage.googleapis.com/korkstudio/ext/ext1_8.webp";
-  static const String ext1_9 =
-      "https://storage.googleapis.com/korkstudio/ext/ext1_9.webp";
-  static const String ext1_10 =
-      "https://storage.googleapis.com/korkstudio/ext/ext1_10.webp";
-  static const String ext1_11 =
-      "https://storage.googleapis.com/korkstudio/ext/ext1_11.webp";
-  static const String ext1_12 =
-      "https://storage.googleapis.com/korkstudio/ext/ext1_12.webp";
-  static const String ext1_13 =
-      "https://storage.googleapis.com/korkstudio/ext/ext1_13.webp";
-  static const String ext1_14 =
-      "https://storage.googleapis.com/korkstudio/ext/ext1_14.webp";
+  static const String ext1_1 = "assets/images/ext1_1.webp";
+  static const String ext1_2 = "assets/images/ext1_2.webp";
+  static const String ext1_3 = "assets/images/ext1_3.webp";
+  static const String ext1_4 = "assets/images/ext1_4.webp";
+  static const String ext1_5 = "assets/images/ext1_5.webp";
+  static const String ext1_6 = "assets/images/ext1_6.webp";
+  static const String ext1_7 = "assets/images/ext1_7.webp";
+  static const String ext1_8 = "assets/images/ext1_8.webp";
+  static const String ext1_9 = "assets/images/ext1_9.webp";
+  static const String ext1_10 = "assets/images/ext1_10.webp";
+  static const String ext1_11 = "assets/images/ext1_11.webp";
+  static const String ext1_12 = "assets/images/ext1_12.webp";
+  static const String ext1_13 = "assets/images/ext1_13.webp";
+  static const String ext1_14 = "assets/images/ext1_14.webp";
   static const List<String> e1 = [
     ext1_1,
     ext1_2,
@@ -44,20 +30,13 @@ class ExtUrls {
     ext1_14,
   ];
 
-  static const String ext2_1 =
-      "https://storage.googleapis.com/korkstudio/ext/ext2_1.webp";
-  static const String ext2_2 =
-      "https://storage.googleapis.com/korkstudio/ext/ext2_2.webp";
-  static const String ext2_3 =
-      "https://storage.googleapis.com/korkstudio/ext/ext2_3.webp";
-  static const String ext2_4 =
-      "https://storage.googleapis.com/korkstudio/ext/ext2_4.webp";
-  static const String ext2_5 =
-      "https://storage.googleapis.com/korkstudio/ext/ext2_5.webp";
-  static const String ext2_6 =
-      "https://storage.googleapis.com/korkstudio/ext/ext2_6.webp";
-  static const String ext2_7 =
-      "https://storage.googleapis.com/korkstudio/ext/ext2_7.webp";
+  static const String ext2_1 = "assets/images/ext2_1.webp";
+  static const String ext2_2 = "assets/images/ext2_2.webp";
+  static const String ext2_3 = "assets/images/ext2_3.webp";
+  static const String ext2_4 = "assets/images/ext2_4.webp";
+  static const String ext2_5 = "assets/images/ext2_5.webp";
+  static const String ext2_6 = "assets/images/ext2_6.webp";
+  static const String ext2_7 = "assets/images/ext2_7.webp";
 
   static const List<String> e2 = [
     ext2_1,
@@ -69,24 +48,15 @@ class ExtUrls {
     ext2_7,
   ];
 
-  static const String ext3_1 =
-      "https://storage.googleapis.com/korkstudio/ext/ext3_1.webp";
-  static const String ext3_2 =
-      "https://storage.googleapis.com/korkstudio/ext/ext3_2.webp";
-  static const String ext3_3 =
-      "https://storage.googleapis.com/korkstudio/ext/ext3_3.webp";
-  static const String ext3_4 =
-      "https://storage.googleapis.com/korkstudio/ext/ext3_4.webp";
-  static const String ext3_5 =
-      "https://storage.googleapis.com/korkstudio/ext/ext3_5.webp";
-  static const String ext3_6 =
-      "https://storage.googleapis.com/korkstudio/ext/ext3_6.webp";
-  static const String ext3_7 =
-      "https://storage.googleapis.com/korkstudio/ext/ext3_7.webp";
-  static const String ext3_8 =
-      "https://storage.googleapis.com/korkstudio/ext/ext3_8.webp";
-  static const String ext3_9 =
-      "https://storage.googleapis.com/korkstudio/ext/ext3_9.webp";
+  static const String ext3_1 = "assets/images/ext3_1.webp";
+  static const String ext3_2 = "assets/images/ext3_2.webp";
+  static const String ext3_3 = "assets/images/ext3_3.webp";
+  static const String ext3_4 = "assets/images/ext3_4.webp";
+  static const String ext3_5 = "assets/images/ext3_5.webp";
+  static const String ext3_6 = "assets/images/ext3_6.webp";
+  static const String ext3_7 = "assets/images/ext3_7.webp";
+  static const String ext3_8 = "assets/images/ext3_8.webp";
+  static const String ext3_9 = "assets/images/ext3_9.webp";
 
   static const List<String> e3 = [
     ext3_1,
@@ -100,26 +70,16 @@ class ExtUrls {
     ext3_9,
   ];
 
-  static const String ext4_1 =
-      "https://storage.googleapis.com/korkstudio/ext/ext4_1.webp";
-  static const String ext4_2 =
-      "https://storage.googleapis.com/korkstudio/ext/ext4_2.webp";
-  static const String ext4_3 =
-      "https://storage.googleapis.com/korkstudio/ext/ext4_3.webp";
-  static const String ext4_4 =
-      "https://storage.googleapis.com/korkstudio/ext/ext4_4.webp";
-  static const String ext4_5 =
-      "https://storage.googleapis.com/korkstudio/ext/ext4_5.webp";
-  static const String ext4_6 =
-      "https://storage.googleapis.com/korkstudio/ext/ext4_6.webp";
-  static const String ext4_7 =
-      "https://storage.googleapis.com/korkstudio/ext/ext4_7.webp";
-  static const String ext4_8 =
-      "https://storage.googleapis.com/korkstudio/ext/ext4_8.webp";
-  static const String ext4_9 =
-      "https://storage.googleapis.com/korkstudio/ext/ext4_9.webp";
-  static const String ext4_10 =
-      "https://storage.googleapis.com/korkstudio/ext/ext4_10.webp";
+  static const String ext4_1 = "assets/images/ext4_1.webp";
+  static const String ext4_2 = "assets/images/ext4_2.webp";
+  static const String ext4_3 = "assets/images/ext4_3.webp";
+  static const String ext4_4 = "assets/images/ext4_4.webp";
+  static const String ext4_5 = "assets/images/ext4_5.webp";
+  static const String ext4_6 = "assets/images/ext4_6.webp";
+  static const String ext4_7 = "assets/images/ext4_7.webp";
+  static const String ext4_8 = "assets/images/ext4_8.webp";
+  static const String ext4_9 = "assets/images/ext4_9.webp";
+  static const String ext4_10 = "assets/images/ext4_10.webp";
 
   static const List<String> e4 = [
     ext4_1,
@@ -134,28 +94,17 @@ class ExtUrls {
     ext4_10,
   ];
 
-  static const String ext5_1 =
-      "https://storage.googleapis.com/korkstudio/ext/ext5_1.webp";
-  static const String ext5_2 =
-      "https://storage.googleapis.com/korkstudio/ext/ext5_2.webp";
-  static const String ext5_3 =
-      "https://storage.googleapis.com/korkstudio/ext/ext5_3.webp";
-  static const String ext5_4 =
-      "https://storage.googleapis.com/korkstudio/ext/ext5_4.webp";
-  static const String ext5_5 =
-      "https://storage.googleapis.com/korkstudio/ext/ext5_5.webp";
-  static const String ext5_6 =
-      "https://storage.googleapis.com/korkstudio/ext/ext5_6.webp";
-  static const String ext5_7 =
-      "https://storage.googleapis.com/korkstudio/ext/ext5_7.webp";
-  static const String ext5_8 =
-      "https://storage.googleapis.com/korkstudio/ext/ext5_8.webp";
-  static const String ext5_9 =
-      "https://storage.googleapis.com/korkstudio/ext/ext5_9.webp";
-  static const String ext5_10 =
-      "https://storage.googleapis.com/korkstudio/ext/ext5_10.webp";
-  static const String ext5_11 =
-      "https://storage.googleapis.com/korkstudio/ext/ext5_11.webp";
+  static const String ext5_1 = "assets/images/ext5_1.webp";
+  static const String ext5_2 = "assets/images/ext5_2.webp";
+  static const String ext5_3 = "assets/images/ext5_3.webp";
+  static const String ext5_4 = "assets/images/ext5_4.webp";
+  static const String ext5_5 = "assets/images/ext5_5.webp";
+  static const String ext5_6 = "assets/images/ext5_6.webp";
+  static const String ext5_7 = "assets/images/ext5_7.webp";
+  static const String ext5_8 = "assets/images/ext5_8.webp";
+  static const String ext5_9 = "assets/images/ext5_9.webp";
+  static const String ext5_10 = "assets/images/ext5_10.webp";
+  static const String ext5_11 = "assets/images/ext5_11.webp";
 
   static const List<String> e5 = [
     ext5_1,
@@ -171,18 +120,12 @@ class ExtUrls {
     ext5_11,
   ];
 
-  static const String ext6_1 =
-      "https://storage.googleapis.com/korkstudio/ext/ext6_1.webp";
-  static const String ext6_2 =
-      "https://storage.googleapis.com/korkstudio/ext/ext6_2.webp";
-  static const String ext6_3 =
-      "https://storage.googleapis.com/korkstudio/ext/ext6_3.webp";
-  static const String ext6_4 =
-      "https://storage.googleapis.com/korkstudio/ext/ext6_4.webp";
-  static const String ext6_5 =
-      "https://storage.googleapis.com/korkstudio/ext/ext6_5.webp";
-  static const String ext6_6 =
-      "https://storage.googleapis.com/korkstudio/ext/ext6_6.webp";
+  static const String ext6_1 = "assets/images/ext6_1.webp";
+  static const String ext6_2 = "assets/images/ext6_2.webp";
+  static const String ext6_3 = "assets/images/ext6_3.webp";
+  static const String ext6_4 = "assets/images/ext6_4.webp";
+  static const String ext6_5 = "assets/images/ext6_5.webp";
+  static const String ext6_6 = "assets/images/ext6_6.webp";
 
   static const List<String> e6 = [
     ext6_1,
@@ -193,30 +136,18 @@ class ExtUrls {
     ext6_6,
   ];
 
-  static const String ext7_1 =
-      "https://storage.googleapis.com/korkstudio/ext/ext7_1.webp";
-  static const String ext7_2 =
-      "https://storage.googleapis.com/korkstudio/ext/ext7_2.webp";
-  static const String ext7_3 =
-      "https://storage.googleapis.com/korkstudio/ext/ext7_3.webp";
-  static const String ext7_4 =
-      "https://storage.googleapis.com/korkstudio/ext/ext7_4.webp";
-  static const String ext7_5 =
-      "https://storage.googleapis.com/korkstudio/ext/ext7_5.webp";
-  static const String ext7_6 =
-      "https://storage.googleapis.com/korkstudio/ext/ext7_6.webp";
-  static const String ext7_7 =
-      "https://storage.googleapis.com/korkstudio/ext/ext7_7.webp";
-  static const String ext7_8 =
-      "https://storage.googleapis.com/korkstudio/ext/ext7_8.webp";
-  static const String ext7_9 =
-      "https://storage.googleapis.com/korkstudio/ext/ext7_9.webp";
-  static const String ext7_10 =
-      "https://storage.googleapis.com/korkstudio/ext/ext7_10.webp";
-  static const String ext7_11 =
-      "https://storage.googleapis.com/korkstudio/ext/ext7_11.webp";
-  static const String ext7_12 =
-      "https://storage.googleapis.com/korkstudio/ext/ext7_12.webp";
+  static const String ext7_1 = "assets/images/ext7_1.webp";
+  static const String ext7_2 = "assets/images/ext7_2.webp";
+  static const String ext7_3 = "assets/images/ext7_3.webp";
+  static const String ext7_4 = "assets/images/ext7_4.webp";
+  static const String ext7_5 = "assets/images/ext7_5.webp";
+  static const String ext7_6 = "assets/images/ext7_6.webp";
+  static const String ext7_7 = "assets/images/ext7_7.webp";
+  static const String ext7_8 = "assets/images/ext7_8.webp";
+  static const String ext7_9 = "assets/images/ext7_9.webp";
+  static const String ext7_10 = "assets/images/ext7_10.webp";
+  static const String ext7_11 = "assets/images/ext7_11.webp";
+  static const String ext7_12 = "assets/images/ext7_12.webp";
 
   static const List<String> e7 = [
     ext7_1,
@@ -233,14 +164,10 @@ class ExtUrls {
     ext7_12,
   ];
 
-  static const String ext8_1 =
-      "https://storage.googleapis.com/korkstudio/ext/ext8_1.webp";
-  static const String ext8_2 =
-      "https://storage.googleapis.com/korkstudio/ext/ext8_2.webp";
-  static const String ext8_3 =
-      "https://storage.googleapis.com/korkstudio/ext/ext8_3.webp";
-  static const String ext8_4 =
-      "https://storage.googleapis.com/korkstudio/ext/ext8_4.webp";
+  static const String ext8_1 = "assets/images/ext8_1.webp";
+  static const String ext8_2 = "assets/images/ext8_2.webp";
+  static const String ext8_3 = "assets/images/ext8_3.webp";
+  static const String ext8_4 = "assets/images/ext8_4.webp";
 
   static const List<String> e8 = [
     ext8_1,
@@ -249,20 +176,13 @@ class ExtUrls {
     ext8_4,
   ];
 
-  static const String ext9_1 =
-      "https://storage.googleapis.com/korkstudio/ext/ext9_1.webp";
-  static const String ext9_2 =
-      "https://storage.googleapis.com/korkstudio/ext/ext9_2.webp";
-  static const String ext9_3 =
-      "https://storage.googleapis.com/korkstudio/ext/ext9_3.webp";
-  static const String ext9_4 =
-      "https://storage.googleapis.com/korkstudio/ext/ext9_4.webp";
-  static const String ext9_5 =
-      "https://storage.googleapis.com/korkstudio/ext/ext9_5.webp";
-  static const String ext9_6 =
-      "https://storage.googleapis.com/korkstudio/ext/ext9_6.webp";
-  static const String ext9_7 =
-      "https://storage.googleapis.com/korkstudio/ext/ext9_7.webp";
+  static const String ext9_1 = "assets/images/ext9_1.webp";
+  static const String ext9_2 = "assets/images/ext9_2.webp";
+  static const String ext9_3 = "assets/images/ext9_3.webp";
+  static const String ext9_4 = "assets/images/ext9_4.webp";
+  static const String ext9_5 = "assets/images/ext9_5.webp";
+  static const String ext9_6 = "assets/images/ext9_6.webp";
+  static const String ext9_7 = "assets/images/ext9_7.webp";
 
   static const List<String> e9 = [
     ext9_1,
@@ -274,40 +194,23 @@ class ExtUrls {
     ext9_7,
   ];
 
-  static const String ext10_1 =
-      "https://storage.googleapis.com/korkstudio/ext/ext10_1.webp";
-  static const String ext10_2 =
-      "https://storage.googleapis.com/korkstudio/ext/ext10_2.webp";
-  static const String ext10_3 =
-      "https://storage.googleapis.com/korkstudio/ext/ext10_3.webp";
-  static const String ext10_4 =
-      "https://storage.googleapis.com/korkstudio/ext/ext10_4.webp";
-  static const String ext10_5 =
-      "https://storage.googleapis.com/korkstudio/ext/ext10_5.webp";
-  static const String ext10_6 =
-      "https://storage.googleapis.com/korkstudio/ext/ext10_6.webp";
-  static const String ext10_7 =
-      "https://storage.googleapis.com/korkstudio/ext/ext10_7.webp";
-  static const String ext10_8 =
-      "https://storage.googleapis.com/korkstudio/ext/ext10_8.webp";
-  static const String ext10_9 =
-      "https://storage.googleapis.com/korkstudio/ext/ext10_9.webp";
-  static const String ext10_10 =
-      "https://storage.googleapis.com/korkstudio/ext/ext10_10.webp";
-  static const String ext10_11 =
-      "https://storage.googleapis.com/korkstudio/ext/ext10_11.webp";
-  static const String ext10_12 =
-      "https://storage.googleapis.com/korkstudio/ext/ext10_12.webp";
-  static const String ext10_13 =
-      "https://storage.googleapis.com/korkstudio/ext/ext10_13.webp";
-  static const String ext10_14 =
-      "https://storage.googleapis.com/korkstudio/ext/ext10_14.webp";
-  static const String ext10_15 =
-      "https://storage.googleapis.com/korkstudio/ext/ext10_15.webp";
-  static const String ext10_16 =
-      "https://storage.googleapis.com/korkstudio/ext/ext10_16.webp";
-  static const String ext10_17 =
-      "https://storage.googleapis.com/korkstudio/ext/ext10_17.webp";
+  static const String ext10_1 = "assets/images/ext10_1.webp";
+  static const String ext10_2 = "assets/images/ext10_2.webp";
+  static const String ext10_3 = "assets/images/ext10_3.webp";
+  static const String ext10_4 = "assets/images/ext10_4.webp";
+  static const String ext10_5 = "assets/images/ext10_5.webp";
+  static const String ext10_6 = "assets/images/ext10_6.webp";
+  static const String ext10_7 = "assets/images/ext10_7.webp";
+  static const String ext10_8 = "assets/images/ext10_8.webp";
+  static const String ext10_9 = "assets/images/ext10_9.webp";
+  static const String ext10_10 = "assets/images/ext10_10.webp";
+  static const String ext10_11 = "assets/images/ext10_11.webp";
+  static const String ext10_12 = "assets/images/ext10_12.webp";
+  static const String ext10_13 = "assets/images/ext10_13.webp";
+  static const String ext10_14 = "assets/images/ext10_14.webp";
+  static const String ext10_15 = "assets/images/ext10_15.webp";
+  static const String ext10_16 = "assets/images/ext10_16.webp";
+  static const String ext10_17 = "assets/images/ext10_17.webp";
 
   static const List<String> e10 = [
     ext10_1,
@@ -329,14 +232,10 @@ class ExtUrls {
     ext10_17,
   ];
 
-  static const String ext11_1 =
-      "https://storage.googleapis.com/korkstudio/ext/ext11_1.webp";
-  static const String ext11_2 =
-      "https://storage.googleapis.com/korkstudio/ext/ext11_2.webp";
-  static const String ext11_3 =
-      "https://storage.googleapis.com/korkstudio/ext/ext11_3.webp";
-  static const String ext11_4 =
-      "https://storage.googleapis.com/korkstudio/ext/ext11_4.webp";
+  static const String ext11_1 = "assets/images/ext11_1.webp";
+  static const String ext11_2 = "assets/images/ext11_2.webp";
+  static const String ext11_3 = "assets/images/ext11_3.webp";
+  static const String ext11_4 = "assets/images/ext11_4.webp";
 
   static const List<String> e11 = [
     ext11_1,
@@ -345,20 +244,13 @@ class ExtUrls {
     ext11_4,
   ];
 
-  static const String ext12_1 =
-      "https://storage.googleapis.com/korkstudio/ext/ext12_1.webp";
-  static const String ext12_2 =
-      "https://storage.googleapis.com/korkstudio/ext/ext12_2.webp";
-  static const String ext12_3 =
-      "https://storage.googleapis.com/korkstudio/ext/ext12_3.webp";
-  static const String ext12_4 =
-      "https://storage.googleapis.com/korkstudio/ext/ext12_4.webp";
-  static const String ext12_5 =
-      "https://storage.googleapis.com/korkstudio/ext/ext12_5.webp";
-  static const String ext12_6 =
-      "https://storage.googleapis.com/korkstudio/ext/ext12_6.webp";
-  static const String ext12_7 =
-      "https://storage.googleapis.com/korkstudio/ext/ext12_7.webp";
+  static const String ext12_1 = "assets/images/ext12_1.webp";
+  static const String ext12_2 = "assets/images/ext12_2.webp";
+  static const String ext12_3 = "assets/images/ext12_3.webp";
+  static const String ext12_4 = "assets/images/ext12_4.webp";
+  static const String ext12_5 = "assets/images/ext12_5.webp";
+  static const String ext12_6 = "assets/images/ext12_6.webp";
+  static const String ext12_7 = "assets/images/ext12_7.webp";
 
   static const List<String> e12 = [
     ext12_1,
@@ -370,30 +262,18 @@ class ExtUrls {
     ext12_7,
   ];
 
-  static const String ext13_1 =
-      "https://storage.googleapis.com/korkstudio/ext/ext13_1.webp";
-  static const String ext13_2 =
-      "https://storage.googleapis.com/korkstudio/ext/ext13_2.webp";
-  static const String ext13_3 =
-      "https://storage.googleapis.com/korkstudio/ext/ext13_3.webp";
-  static const String ext13_4 =
-      "https://storage.googleapis.com/korkstudio/ext/ext13_4.webp";
-  static const String ext13_5 =
-      "https://storage.googleapis.com/korkstudio/ext/ext13_5.webp";
-  static const String ext13_6 =
-      "https://storage.googleapis.com/korkstudio/ext/ext13_6.webp";
-  static const String ext13_7 =
-      "https://storage.googleapis.com/korkstudio/ext/ext13_7.webp";
-  static const String ext13_8 =
-      "https://storage.googleapis.com/korkstudio/ext/ext13_8.webp";
-  static const String ext13_9 =
-      "https://storage.googleapis.com/korkstudio/ext/ext13_9.webp";
-  static const String ext13_10 =
-      "https://storage.googleapis.com/korkstudio/ext/ext13_10.webp";
-  static const String ext13_11 =
-      "https://storage.googleapis.com/korkstudio/ext/ext13_11.webp";
-  static const String ext13_12 =
-      "https://storage.googleapis.com/korkstudio/ext/ext13_12.webp";
+  static const String ext13_1 = "assets/images/ext13_1.webp";
+  static const String ext13_2 = "assets/images/ext13_2.webp";
+  static const String ext13_3 = "assets/images/ext13_3.webp";
+  static const String ext13_4 = "assets/images/ext13_4.webp";
+  static const String ext13_5 = "assets/images/ext13_5.webp";
+  static const String ext13_6 = "assets/images/ext13_6.webp";
+  static const String ext13_7 = "assets/images/ext13_7.webp";
+  static const String ext13_8 = "assets/images/ext13_8.webp";
+  static const String ext13_9 = "assets/images/ext13_9.webp";
+  static const String ext13_10 = "assets/images/ext13_10.webp";
+  static const String ext13_11 = "assets/images/ext13_11.webp";
+  static const String ext13_12 = "assets/images/ext13_12.webp";
 
   static const List<String> e13 = [
     ext13_1,
@@ -410,22 +290,14 @@ class ExtUrls {
     ext13_12,
   ];
 
-  static const String ext14_1 =
-      "https://storage.googleapis.com/korkstudio/con/con1_1.webp";
-  static const String ext14_2 =
-      "https://storage.googleapis.com/korkstudio/con/con1_2.webp";
-  static const String ext14_3 =
-      "https://storage.googleapis.com/korkstudio/con/con1_3.webp";
-  static const String ext14_4 =
-      "https://storage.googleapis.com/korkstudio/con/con1_4.webp";
-  static const String ext14_5 =
-      "https://storage.googleapis.com/korkstudio/con/con1_5.webp";
-  static const String ext14_6 =
-      "https://storage.googleapis.com/korkstudio/con/con1_6.webp";
-  static const String ext14_7 =
-      "https://storage.googleapis.com/korkstudio/con/con1_7.webp";
-  static const String ext14_8 =
-      "https://storage.googleapis.com/korkstudio/con/con1_8.webp";
+  static const String ext14_1 = "assets/images/con1_1.webp";
+  static const String ext14_2 = "assets/images/con1_2.webp";
+  static const String ext14_3 = "assets/images/con1_3.webp";
+  static const String ext14_4 = "assets/images/con1_4.webp";
+  static const String ext14_5 = "assets/images/con1_5.webp";
+  static const String ext14_6 = "assets/images/con1_6.webp";
+  static const String ext14_7 = "assets/images/con1_7.webp";
+  static const String ext14_8 = "assets/images/con1_8.webp";
 
   static const List<String> e14 = [
     ext14_1,
@@ -438,42 +310,24 @@ class ExtUrls {
     ext14_8,
   ];
 
-  static const String ext15_1 =
-      "https://storage.googleapis.com/korkstudio/con/con2_1.webp";
-  static const String ext15_2 =
-      "https://storage.googleapis.com/korkstudio/con/con2_2.webp";
-  static const String ext15_3 =
-      "https://storage.googleapis.com/korkstudio/con/con2_3.webp";
-  static const String ext15_4 =
-      "https://storage.googleapis.com/korkstudio/con/con2_4.webp";
-  static const String ext15_5 =
-      "https://storage.googleapis.com/korkstudio/con/con2_5.webp";
-  static const String ext15_6 =
-      "https://storage.googleapis.com/korkstudio/con/con2_6.webp";
-  static const String ext15_7 =
-      "https://storage.googleapis.com/korkstudio/con/con2_7.webp";
-  static const String ext15_8 =
-      "https://storage.googleapis.com/korkstudio/con/con2_8.webp";
-  static const String ext15_9 =
-      "https://storage.googleapis.com/korkstudio/con/con2_9.webp";
-  static const String ext15_10 =
-      "https://storage.googleapis.com/korkstudio/con/con2_10.webp";
-  static const String ext15_11 =
-      "https://storage.googleapis.com/korkstudio/con/con2_11.webp";
-  static const String ext15_12 =
-      "https://storage.googleapis.com/korkstudio/con/con2_12.webp";
-  static const String ext15_13 =
-      "https://storage.googleapis.com/korkstudio/con/con2_13.webp";
-  static const String ext15_14 =
-      "https://storage.googleapis.com/korkstudio/con/con2_14.webp";
-  static const String ext15_15 =
-      "https://storage.googleapis.com/korkstudio/con/con2_15.webp";
-  static const String ext15_16 =
-      "https://storage.googleapis.com/korkstudio/con/con2_16.webp";
-  static const String ext15_17 =
-      "https://storage.googleapis.com/korkstudio/con/con2_17.webp";
-  static const String ext15_18 =
-      "https://storage.googleapis.com/korkstudio/con/con2_18.webp";
+  static const String ext15_1 = "assets/images/con2_1.webp";
+  static const String ext15_2 = "assets/images/con2_2.webp";
+  static const String ext15_3 = "assets/images/con2_3.webp";
+  static const String ext15_4 = "assets/images/con2_4.webp";
+  static const String ext15_5 = "assets/images/con2_5.webp";
+  static const String ext15_6 = "assets/images/con2_6.webp";
+  static const String ext15_7 = "assets/images/con2_7.webp";
+  static const String ext15_8 = "assets/images/con2_8.webp";
+  static const String ext15_9 = "assets/images/con2_9.webp";
+  static const String ext15_10 = "assets/images/con2_10.webp";
+  static const String ext15_11 = "assets/images/con2_11.webp";
+  static const String ext15_12 = "assets/images/con2_12.webp";
+  static const String ext15_13 = "assets/images/con2_13.webp";
+  static const String ext15_14 = "assets/images/con2_14.webp";
+  static const String ext15_15 = "assets/images/con2_15.webp";
+  static const String ext15_16 = "assets/images/con2_16.webp";
+  static const String ext15_17 = "assets/images/con2_17.webp";
+  static const String ext15_18 = "assets/images/con2_18.webp";
 
   static const List<String> e15 = [
     ext15_1,
@@ -496,20 +350,13 @@ class ExtUrls {
     ext15_18,
   ];
 
-  static const String ext16_1 =
-      "https://storage.googleapis.com/korkstudio/ext/ext16_1.webp";
-  static const String ext16_2 =
-      "https://storage.googleapis.com/korkstudio/ext/ext16_2.webp";
-  static const String ext16_3 =
-      "https://storage.googleapis.com/korkstudio/ext/ext16_3.webp";
-  static const String ext16_4 =
-      "https://storage.googleapis.com/korkstudio/ext/ext16_4.webp";
-  static const String ext16_5 =
-      "https://storage.googleapis.com/korkstudio/ext/ext16_5.webp";
-  static const String ext16_6 =
-      "https://storage.googleapis.com/korkstudio/ext/ext16_6.webp";
-  static const String ext16_7 =
-      "https://storage.googleapis.com/korkstudio/ext/ext16_7.webp";
+  static const String ext16_1 = "assets/images/ext16_1.webp";
+  static const String ext16_2 = "assets/images/ext16_2.webp";
+  static const String ext16_3 = "assets/images/ext16_3.webp";
+  static const String ext16_4 = "assets/images/ext16_4.webp";
+  static const String ext16_5 = "assets/images/ext16_5.webp";
+  static const String ext16_6 = "assets/images/ext16_6.webp";
+  static const String ext16_7 = "assets/images/ext16_7.webp";
 
   static const List<String> e16 = [
     ext16_1,
@@ -521,12 +368,9 @@ class ExtUrls {
     ext16_7,
   ];
 
-  static const String ext17_1 =
-      "https://storage.googleapis.com/korkstudio/ext/ext17_1.webp";
-  static const String ext17_2 =
-      "https://storage.googleapis.com/korkstudio/ext/ext17_2.webp";
-  static const String ext17_3 =
-      "https://storage.googleapis.com/korkstudio/ext/ext17_3.webp";
+  static const String ext17_1 = "assets/images/ext17_1.webp";
+  static const String ext17_2 = "assets/images/ext17_2.webp";
+  static const String ext17_3 = "assets/images/ext17_3.webp";
 
   static const List<String> e17 = [
     ext17_1,
@@ -534,14 +378,10 @@ class ExtUrls {
     ext17_3,
   ];
 
-  static const String ext18_1 =
-      "https://storage.googleapis.com/korkstudio/ext/ext18_1.webp";
-  static const String ext18_2 =
-      "https://storage.googleapis.com/korkstudio/ext/ext18_2.webp";
-  static const String ext18_3 =
-      "https://storage.googleapis.com/korkstudio/ext/ext18_3.webp";
-  static const String ext18_4 =
-      "https://storage.googleapis.com/korkstudio/ext/ext18_4.webp";
+  static const String ext18_1 = "assets/images/ext18_1.webp";
+  static const String ext18_2 = "assets/images/ext18_2.webp";
+  static const String ext18_3 = "assets/images/ext18_3.webp";
+  static const String ext18_4 = "assets/images/ext18_4.webp";
 
   static const List<String> e18 = [
     ext18_1,
@@ -550,16 +390,11 @@ class ExtUrls {
     ext18_4,
   ];
 
-  static const String ext19_1 =
-      "https://storage.googleapis.com/korkstudio/ext/ext19_1.webp";
-  static const String ext19_2 =
-      "https://storage.googleapis.com/korkstudio/ext/ext19_2.webp";
-  static const String ext19_3 =
-      "https://storage.googleapis.com/korkstudio/ext/ext19_3.webp";
-  static const String ext19_4 =
-      "https://storage.googleapis.com/korkstudio/ext/ext19_4.webp";
-  static const String ext19_5 =
-      "https://storage.googleapis.com/korkstudio/ext/ext19_5.webp";
+  static const String ext19_1 = "assets/images/ext19_1.webp";
+  static const String ext19_2 = "assets/images/ext19_2.webp";
+  static const String ext19_3 = "assets/images/ext19_3.webp";
+  static const String ext19_4 = "assets/images/ext19_4.webp";
+  static const String ext19_5 = "assets/images/ext19_5.webp";
 
   static const List<String> e19 = [
     ext19_1,

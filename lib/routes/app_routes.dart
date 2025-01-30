@@ -13,7 +13,7 @@ class AppRoutes {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case home:
-        return MaterialPageRoute(builder: (_) => const MyHomePage());
+        return MaterialPageRoute(builder: (_) => MyHomePage());
       case works:
         return MaterialPageRoute(builder: (_) => const WorksPage());
       case about:

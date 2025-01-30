@@ -7,14 +7,17 @@ class CachedImageWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Image.asset(
-        imageUrl,
-        fit: BoxFit
-            .cover, // Масштабирует изображение, чтобы оно заполнило пространство
-        filterQuality: FilterQuality
-            .high, // Улучшение качества изображения при его растягивании
-      ),
+    return Image.asset(
+      imageUrl,
+      fit: BoxFit.cover,
+      filterQuality: FilterQuality.none, // Ускоряет загрузку
     );
+  }
+}
+
+// Функция для предзагрузки изображений
+void preloadImages(BuildContext context, List<String> imagePaths) {
+  for (var imagePath in imagePaths) {
+    precacheImage(AssetImage(imagePath), context);
   }
 }

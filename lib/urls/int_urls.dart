@@ -79,16 +79,11 @@ class IntUrls {
     int4_10,
   ];
 
-  static const String int5_1 =
-      "https://storage.googleapis.com/korkstudio/int/int5_1.webp";
-  static const String int5_2 =
-      "https://storage.googleapis.com/korkstudio/int/int5_2.webp";
-  static const String int5_3 =
-      "https://storage.googleapis.com/korkstudio/int/int5_3.webp";
-  static const String int5_4 =
-      "https://storage.googleapis.com/korkstudio/int/int5_4.webp";
-  static const String int5_5 =
-      "https://storage.googleapis.com/korkstudio/int/int5_5.webp";
+  static const String int5_1 = "assets/images/int5_1.webp";
+  static const String int5_2 = "assets/images/int5_2.webp";
+  static const String int5_3 = "assets/images/int5_3.webp";
+  static const String int5_4 = "assets/images/int5_4.webp";
+  static const String int5_5 = "assets/images/int5_5.webp";
 
   static const List<String> i5 = [
     int5_1,
@@ -98,16 +93,11 @@ class IntUrls {
     int5_5,
   ];
 
-  static const String int6_1 =
-      "https://storage.googleapis.com/korkstudio/int/int6_1.webp";
-  static const String int6_2 =
-      "https://storage.googleapis.com/korkstudio/int/int6_2.webp";
-  static const String int6_3 =
-      "https://storage.googleapis.com/korkstudio/int/int6_3.webp";
-  static const String int6_4 =
-      "https://storage.googleapis.com/korkstudio/int/int6_4.webp";
-  static const String int6_5 =
-      "https://storage.googleapis.com/korkstudio/int/int6_5.webp";
+  static const String int6_1 = "assets/images/int6_1.webp";
+  static const String int6_2 = "assets/images/int6_2.webp";
+  static const String int6_3 = "assets/images/int6_3.webp";
+  static const String int6_4 = "assets/images/int6_4.webp";
+  static const String int6_5 = "assets/images/int6_5.webp";
 
   static const List<String> i6 = [
     int6_1,
@@ -117,16 +107,11 @@ class IntUrls {
     int6_5,
   ];
 
-  static const String int7_1 =
-      "https://storage.googleapis.com/korkstudio/int/int7_1.webp";
-  static const String int7_2 =
-      "https://storage.googleapis.com/korkstudio/int/int7_2.webp";
-  static const String int7_3 =
-      "https://storage.googleapis.com/korkstudio/int/int7_3.webp";
-  static const String int7_4 =
-      "https://storage.googleapis.com/korkstudio/int/int7_4.webp";
-  static const String int7_5 =
-      "https://storage.googleapis.com/korkstudio/int/int7_5.webp";
+  static const String int7_1 = "assets/images/int7_1.webp";
+  static const String int7_2 = "assets/images/int7_2.webp";
+  static const String int7_3 = "assets/images/int7_3.webp";
+  static const String int7_4 = "assets/images/int7_4.webp";
+  static const String int7_5 = "assets/images/int7_5.webp";
 
   static const List<String> i7 = [
     int7_1,
@@ -136,32 +121,19 @@ class IntUrls {
     int7_5,
   ];
 
-  static const String int8_1 =
-      "https://storage.googleapis.com/korkstudio/int/int8_1.webp";
-  static const String int8_2 =
-      "https://storage.googleapis.com/korkstudio/int/int8_2.webp";
-  static const String int8_3 =
-      "https://storage.googleapis.com/korkstudio/int/int8_3.webp";
-  static const String int8_4 =
-      "https://storage.googleapis.com/korkstudio/int/int8_4.webp";
-  static const String int8_5 =
-      "https://storage.googleapis.com/korkstudio/int/int8_5.webp";
-  static const String int8_6 =
-      "https://storage.googleapis.com/korkstudio/int/int8_6.webp";
-  static const String int8_7 =
-      "https://storage.googleapis.com/korkstudio/int/int8_7.webp";
-  static const String int8_8 =
-      "https://storage.googleapis.com/korkstudio/int/int8_8.webp";
-  static const String int8_9 =
-      "https://storage.googleapis.com/korkstudio/int/int8_9.webp";
-  static const String int8_10 =
-      "https://storage.googleapis.com/korkstudio/int/int8_10.webp";
-  static const String int8_11 =
-      "https://storage.googleapis.com/korkstudio/int/int8_11.webp";
-  static const String int8_12 =
-      "https://storage.googleapis.com/korkstudio/int/int8_12.webp";
-  static const String int8_13 =
-      "https://storage.googleapis.com/korkstudio/int/int8_13.webp";
+  static const String int8_1 = "assets/images/int8_1.webp";
+  static const String int8_2 = "assets/images/int8_2.webp";
+  static const String int8_3 = "assets/images/int8_3.webp";
+  static const String int8_4 = "assets/images/int8_4.webp";
+  static const String int8_5 = "assets/images/int8_5.webp";
+  static const String int8_6 = "assets/images/int8_6.webp";
+  static const String int8_7 = "assets/images/int8_7.webp";
+  static const String int8_8 = "assets/images/int8_8.webp";
+  static const String int8_9 = "assets/images/int8_9.webp";
+  static const String int8_10 = "assets/images/int8_10.webp";
+  static const String int8_11 = "assets/images/int8_11.webp";
+  static const String int8_12 = "assets/images/int8_12.webp";
+  static const String int8_13 = "assets/images/int8_13.webp";
 
   static const List<String> i8 = [
     int8_1,
@@ -179,30 +151,18 @@ class IntUrls {
     int8_13,
   ];
 
-  static const String int9_1 =
-      "https://storage.googleapis.com/korkstudio/int/int9_1.webp";
-  static const String int9_2 =
-      "https://storage.googleapis.com/korkstudio/int/int9_2.webp";
-  static const String int9_3 =
-      "https://storage.googleapis.com/korkstudio/int/int9_3.webp";
-  static const String int9_4 =
-      "https://storage.googleapis.com/korkstudio/int/int9_4.webp";
-  static const String int9_5 =
-      "https://storage.googleapis.com/korkstudio/int/int9_5.webp";
-  static const String int9_6 =
-      "https://storage.googleapis.com/korkstudio/int/int9_6.webp";
-  static const String int9_7 =
-      "https://storage.googleapis.com/korkstudio/int/int9_7.webp";
-  static const String int9_8 =
-      "https://storage.googleapis.com/korkstudio/int/int9_8.webp";
-  static const String int9_9 =
-      "https://storage.googleapis.com/korkstudio/int/int9_9.webp";
-  static const String int9_10 =
-      "https://storage.googleapis.com/korkstudio/int/int9_10.webp";
-  static const String int9_11 =
-      "https://storage.googleapis.com/korkstudio/int/int9_11.webp";
-  static const String int9_12 =
-      "https://storage.googleapis.com/korkstudio/int/int9_12.webp";
+  static const String int9_1 = "assets/images/int9_1.webp";
+  static const String int9_2 = "assets/images/int9_2.webp";
+  static const String int9_3 = "assets/images/int9_3.webp";
+  static const String int9_4 = "assets/images/int9_4.webp";
+  static const String int9_5 = "assets/images/int9_5.webp";
+  static const String int9_6 = "assets/images/int9_6.webp";
+  static const String int9_7 = "assets/images/int9_7.webp";
+  static const String int9_8 = "assets/images/int9_8.webp";
+  static const String int9_9 = "assets/images/int9_9.webp";
+  static const String int9_10 = "assets/images/int9_10.webp";
+  static const String int9_11 = "assets/images/int9_11.webp";
+  static const String int9_12 = "assets/images/int9_12.webp";
 
   static const List<String> i9 = [
     int9_1,

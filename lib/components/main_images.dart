@@ -1,23 +1,50 @@
 import 'package:flutter/material.dart';
 import 'package:kork_studio/components/cached_network_image.dart';
-import 'package:kork_studio/routes/pages/detail_image_page.dart';
+import 'package:kork_studio/components/works_screens/detail_image_screen.dart';
 import 'package:kork_studio/theme/app_colors.dart';
+import 'package:kork_studio/urls/con_urls.dart';
+import 'package:kork_studio/urls/ext_urls.dart';
+import 'package:kork_studio/urls/int_urls.dart';
 
 class MainImages extends StatefulWidget {
-  const MainImages({
+  MainImages({
     super.key,
     required this.screenWidth,
-    required this.imageUrls,
   });
 
   final double screenWidth;
-  final List<String> imageUrls;
 
   @override
   State<MainImages> createState() => _MainImagesState();
 }
 
 class _MainImagesState extends State<MainImages> {
+  final List<String> imageUrls = [
+    ConUrls.con1_1,
+    ExtUrls.ext11_1,
+    IntUrls.int3_1,
+    ExtUrls.ext2_1,
+    ExtUrls.ext12_1,
+    ExtUrls.ext17_1,
+    ExtUrls.ext16_1,
+    IntUrls.int9_1,
+    IntUrls.int4_1,
+    ExtUrls.ext8_1,
+  ];
+
+  final Map<String, List<String>> relatedImagesMap = {
+    ConUrls.con1_1: ConUrls.c1,
+    ExtUrls.ext11_1: ExtUrls.e11,
+    IntUrls.int3_1: IntUrls.i3,
+    ExtUrls.ext2_1: ExtUrls.e2,
+    ExtUrls.ext12_1: ExtUrls.e12,
+    ExtUrls.ext17_1: ExtUrls.e17,
+    ExtUrls.ext16_1: ExtUrls.e16,
+    IntUrls.int9_1: IntUrls.i9,
+    IntUrls.int4_1: IntUrls.i4,
+    ExtUrls.ext8_1: ExtUrls.e8,
+  };
+
   @override
   Widget build(BuildContext context) {
     return SliverPadding(
@@ -33,45 +60,46 @@ class _MainImagesState extends State<MainImages> {
         ),
         delegate: SliverChildBuilderDelegate(
           (context, index) {
-            String imagePath = widget.imageUrls[index];
-            bool isHovered = false; // Флаг для отслеживания наведения
+            String imageUrl = imageUrls[index];
+            List<String> relatedImages = relatedImagesMap[imageUrl] ?? [];
+            ValueNotifier<bool> isHovered = ValueNotifier(false);
 
-            return StatefulBuilder(
-              builder: (context, setState) => MouseRegion(
-                onEnter: (_) {
-                  setState(() => isHovered = true);
-                },
-                onExit: (_) {
-                  setState(() => isHovered = false);
-                },
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => DetailImagePage(
-                          imagePath: imagePath,
-                          relatedImages:
-                              widget.imageUrls, // Связанные изображения
-                        ),
+            return MouseRegion(
+              onEnter: (_) => isHovered.value = true,
+              onExit: (_) => isHovered.value = false,
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => DetailImageScreen(
+                        imagePath: imageUrl,
+                        relatedImages: relatedImages,
                       ),
+                    ),
+                  );
+                },
+                child: ValueListenableBuilder<bool>(
+                  valueListenable: isHovered,
+                  builder: (context, hover, child) {
+                    return Stack(
+                      fit: StackFit.expand,
+                      children: [
+                        CachedImageWidget(
+                          imageUrl: imageUrl,
+                        ),
+                        if (hover)
+                          Container(
+                            color: AppColors.appBarIconColor.withOpacity(0.9),
+                          ),
+                      ],
                     );
                   },
-                  child: Stack(
-                    fit: StackFit.expand,
-                    children: [
-                      CachedImageWidget(imageUrl: imagePath),
-                      if (isHovered)
-                        Container(
-                          color: AppColors.appBarIconColor.withOpacity(0.9),
-                        ),
-                    ],
-                  ),
                 ),
               ),
             );
           },
-          childCount: widget.imageUrls.length,
+          childCount: imageUrls.length,
         ),
       ),
     );

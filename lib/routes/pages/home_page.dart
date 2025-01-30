@@ -6,7 +6,6 @@ import 'package:kork_studio/components/main_images.dart';
 import 'package:kork_studio/components/custom_texts/end_text.dart';
 import 'package:kork_studio/theme/app_colors.dart';
 import 'package:kork_studio/constants/app_texts.dart';
-import 'package:kork_studio/urls/main_urls.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -19,25 +18,6 @@ class _MyHomePageState extends State<MyHomePage> {
   late ScrollController _scrollController;
   bool _isLogoVisible = false; // Логотип
   bool _isTextVisible = true; // Текст
-
-  List<String> imageUrls = [
-    MainUrls.m1,
-    MainUrls.m2,
-    MainUrls.m3,
-    MainUrls.m4,
-    MainUrls.m5,
-    MainUrls.m6,
-    MainUrls.m7,
-    MainUrls.m8,
-    MainUrls.m9,
-    MainUrls.m10,
-    MainUrls.m11,
-    MainUrls.m12,
-    MainUrls.m13,
-    MainUrls.m14,
-    MainUrls.m15,
-    MainUrls.m16,
-  ]; // Список для хранения URL-ов изображений
 
   @override
   void initState() {
@@ -133,7 +113,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                 ),
               ),
-              MainImages(screenWidth: screenWidth, imageUrls: imageUrls),
+              MainImages(screenWidth: screenWidth),
               EndText(),
             ],
           ),
